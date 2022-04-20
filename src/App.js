@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import MasterPage from './components/MasterPage/masterpage';
+import Menu from './components/Menu/menu';
+import Cards from './components/Cards/cards';
+import Reports from './components/Reports/reports';
+import Searchbar from './components/Searchbar/searchbar';
+import Home from './components/Home/Home';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <MasterPage/>
+      <BrowserRouter>
+      <div className="ui grid">
+        <div className="left floated two wide column">
+          <div className="ui segment">
+            <Menu/>
+          </div>
+        </div>
+        <div className="right floated ten wide column">
+          <div className="ui segment">
+            <Routes>
+              <Route path="/" element={<Home/>} />
+              <Route path="/cards" element={<Cards/>} />
+              <Route path="/reports" element={<Reports/>} />
+              <Route path="/searchbar" element={<Searchbar/>} />
+            </Routes>
+          </div>
+        </div>
+      </div>
+      </BrowserRouter>
+      </>
   );
-}
+};
 
 export default App;

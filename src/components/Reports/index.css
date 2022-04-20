@@ -1,0 +1,9 @@
+.iframeCss {
+    height: 500px !important;
+    width: 100% !important;
+    color: #231f20;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0p;
+    border: 1px solid #717171;
+  }
