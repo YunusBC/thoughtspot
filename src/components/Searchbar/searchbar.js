@@ -34,8 +34,16 @@ class SearchBar extends React.Component {
   render() {
     
     return (
-      <div className="ui grid">
-        <div id="embed" className="embedSearch"></div>
+      <div className="page-content">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card card-box">
+              <div class="card-body">
+                <div id="embed" className="embedSearch"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     );
   };

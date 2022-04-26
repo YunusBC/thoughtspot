@@ -17,10 +17,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## About the project
 
-This react application is based on the first version of Thoughtspot Portal. 
-You need to login to https://livingston.thoughtspot.cloud/ to display the embedded links
-Added routing support for navigation. When you click an item on the menu, it doesn't reload the page.
-Semantic-UI CDN is added to the project. You can remove it from index.html if you need to
-Each menu item is a component, so has its own css file. Do the customizations there
-
-PLEASE DON'T FOCUS ON THE DESIGN AT THE MOMENT !
+- This react application is based on the first version of Thoughtspot Portal. 
+- You need to login to https://livingston.thoughtspot.cloud/ to display the embedded links
+- Added routing support for navigation. When you click an item on the menu, it doesn't reload the page.
+- Semantic-UI CDN is added to the project. You can remove it from index.html if you need to
+- Each menu item is a component, so has its own css file. Do the customizations there

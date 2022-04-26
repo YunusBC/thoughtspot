@@ -1,4 +1,4 @@
-.embedSearch {
+/* .embedSearch {
     margin: 15px;
     height: 600px;
     width: 100%;
@@ -7,4 +7,8 @@
     overflow: hidden;
     padding: 0p;
     border: 1px solid #717171;
+  } */
+  .embedSearch {
+    height: 600px;
+    width: 100%;
   }

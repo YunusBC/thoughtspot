@@ -6,31 +6,27 @@ import Cards from './components/Cards/cards';
 import Reports from './components/Reports/reports';
 import Searchbar from './components/Searchbar/searchbar';
 import Home from './components/Home/Home';
+import Footer from './components/Footer/footer';
 
 const App = () => {
   return (
-    <>
-      <MasterPage/>
+    <div className="page-wrapper">
       <BrowserRouter>
-      <div className="ui grid">
-        <div className="left floated two wide column">
-          <div className="ui segment">
+      <MasterPage/>
+      <div className="page-container">
             <Menu/>
-          </div>
-        </div>
-        <div className="right floated ten wide column">
-          <div className="ui segment">
-            <Routes>
-              <Route path="/" element={<Home/>} />
-              <Route path="/cards" element={<Cards/>} />
-              <Route path="/reports" element={<Reports/>} />
-              <Route path="/searchbar" element={<Searchbar/>} />
-            </Routes>
-          </div>
-        </div>
+            <div className="page-content-wrapper">
+              <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/cards" element={<Cards/>} />
+                <Route path="/reports" element={<Reports/>} />
+                <Route path="/searchbar" element={<Searchbar/>} />
+              </Routes>
+            </div>
       </div>
       </BrowserRouter>
-      </>
+      <Footer/>
+      </div>
   );
 };
 
