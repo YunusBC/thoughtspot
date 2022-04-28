@@ -8,3 +8,32 @@
     padding: 0p;
     border: 1px solid #717171;
   } */
+/* 
+.iframeCssNew {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  color: #231f20;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 0p;
+  border: 1px solid #717171;
+  display: block;
+} */
+
+.iframe-container {
+  overflow: hidden;
+  /* 16:9 aspect ratio */
+  padding-top: 56.25%;
+  position: relative;
+  height: 100%;
+}
+
+.iframe-container iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
