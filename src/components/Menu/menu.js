@@ -4,33 +4,6 @@ import './index.css';
 
 const Menu = () => {
   return (
-  //   <table className="ui celled table">
-  //   <thead>
-  //     <tr><th>MENU</th>
-  //   </tr></thead>
-  //   <tbody>
-  //     <tr>
-  //       <td data-label="Name">
-  //           <Link to="/" className="item">Home</Link>
-  //       </td>
-  //     </tr>
-  //     <tr>
-  //       <td data-label="Name">
-  //           <Link to="/cards" className="item">Cards</Link>
-  //       </td>
-  //     </tr>
-  //     <tr>
-  //       <td data-label="Name">
-  //           <Link to="/searchbar" className="item">Search Bar</Link>
-  //       </td>
-  //     </tr>
-  //     <tr>
-  //       <td data-label="Name">
-  //           <Link to="/reports" className="item">Reports</Link>
-  //       </td>
-  //     </tr>
-  //   </tbody>
-  // </table>
   <div className="sidebar-container">
                 <div className="sidemenu-container navbar-collapse collapse fixed-menu">
                    <div id="remove-scroll" className="left-sidemenu">

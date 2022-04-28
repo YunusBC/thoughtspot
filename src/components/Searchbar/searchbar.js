@@ -7,7 +7,7 @@ import {
 } from 'https://cdn.jsdelivr.net/npm/@thoughtspot/visual-embed-sdk/dist/tsembed.es.js';
 
 init({
-  thoughtSpotHost: 'http://livingston.thoughtspot.cloud',
+  thoughtSpotHost: 'http://blue-cloud.thoughtspot.cloud/',
   authType: AuthType.None
 });
 
@@ -35,10 +35,10 @@ class SearchBar extends React.Component {
     
     return (
       <div className="page-content">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card card-box">
-              <div class="card-body">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="card card-box">
+              <div className="card-body">
                 <div id="embed" className="embedSearch"></div>
               </div>
             </div>
