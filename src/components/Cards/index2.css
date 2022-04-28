@@ -9,6 +9,7 @@
     min-height: 90%;
     padding: 40px 20px 10px
 }
+
 .firstRow {
     display: grid;
     grid-template-columns: 3fr 6fr 3fr;
@@ -42,6 +43,7 @@
     padding: 20px;
     background-color: white;
 }
+
 .ts-frame iframe{
     height: 100%;
     width: 100%;
