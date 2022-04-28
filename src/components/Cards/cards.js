@@ -12,7 +12,7 @@ const Cards = () => {
                 <div class="card card-box">
                   <div class="card-body min-ht100">
                     <iframe
-                      title="Total Clients"
+                      title="Total Work Orders"
                       className="iframeCssNew"
                       src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/8af809cb-88c3-4586-97ab-e062088d84e9/2c2f8672-3e53-4970-b0ab-c6f692bf9831"
                     ></iframe>
@@ -24,7 +24,7 @@ const Cards = () => {
                 <div class="card card-box">
                   <div class="card-body min-ht100">
                     <iframe
-                      title="Total Paid Amount"
+                      title="Completed Ontime %"
                       className="iframeCssNew"
                       src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/8af809cb-88c3-4586-97ab-e062088d84e9/2221b7d0-26b1-4ec0-a817-2b2216d317bd"
                     ></iframe>
@@ -36,7 +36,7 @@ const Cards = () => {
 
           <div class="col-md-6">
             <div class="card card-box">
-              <div class="card-body min-ht200">
+              <div class="card-body min-ht300">
                 <iframe
                   title="Work Orders Trends"
                   className="iframeCssNew"
@@ -48,11 +48,11 @@ const Cards = () => {
 
           <div class="col-md-3">
             <div class="card card-box">
-              <div class="card-body min-ht200">
+              <div class="card-body min-ht300">
                 <iframe
                   title="Work Orders by Region"
                   className="iframeCssNew"
-                  src=""
+                  src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/8af809cb-88c3-4586-97ab-e062088d84e9/1c08accc-2a41-4094-9e37-157cfd91742d"
                 ></iframe>
               </div>
             </div>

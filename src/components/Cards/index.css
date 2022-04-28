@@ -24,3 +24,19 @@
   .page-content-wrapper .page-content.no-min-height {
     min-height: auto
   }
+
+  .min-ht200 {
+    min-height: 200px;
+  }
+  
+  .min-ht300 {
+    min-height: 300px;
+  }
+  
+  .min-ht100 {
+    min-height: 90px;
+  }
+  
+  .min-ht250 {
+    min-height: 258px;
+  }
