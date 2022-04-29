@@ -12,26 +12,26 @@
 
 .firstRow {
     display: grid;
-    grid-template-columns: 3fr 6fr 3fr;
-    grid-template-rows: 4fr 12px;
-    grid-column-gap: 12px;
-    grid-row-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    grid-template-rows: 4fr 4fr 1em;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;  
 }
 
 .firstRowCol1 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 12px;
+    grid-template-rows: repeat(auto-flll, minmax(300px, 1fr));
+    grid-column-gap: 1empx;
+    grid-row-gap: 1em;
 }
 
 .secondRow {
     display: grid;
-    grid-template-columns: 4fr 4fr 4fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
     grid-template-rows: 8fr;
-    grid-column-gap: 12px;
-    grid-row-gap: 12px; 
+    grid-column-gap: 1em;
+    grid-row-gap: 1em; 
     min-height: 500px;
 }
 
@@ -42,9 +42,18 @@
     /* border: 2px dashed #73AD21; */
     padding: 20px;
     background-color: white;
+    min-width: 300px;
 }
 
 .ts-frame iframe{
     height: 100%;
-    width: 100%;
+    width: 100%; 
+}
+
+.col-span2 { 
+    grid-column: span 2 ; 
+}
+
+.row-span2 {
+    grid-row: span 2;
 }

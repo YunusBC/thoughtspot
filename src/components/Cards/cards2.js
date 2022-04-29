@@ -6,7 +6,7 @@ const Cards2 = () => {
     <div className="cards2Page">
       <div className="page-content">
         <div className="firstRow">
-          <div className="firstRowCol1">
+          <div className="firstRowCol1 row-span2">
             <div className="ts-frame">
               <iframe
                 title="Total Work Orders"
@@ -24,7 +24,7 @@ const Cards2 = () => {
               ></iframe>
             </div>
           </div>
-          <div className="ts-frame">
+          <div className="ts-frame col-span2 row-span2">
             <iframe
               title="Work Orders Trends"
               className="iframeCssNew"
@@ -32,7 +32,7 @@ const Cards2 = () => {
               frameBorder="0"
             ></iframe>
           </div>
-          <div className="ts-frame">
+          <div className="ts-frame row-span2">
             <iframe
               title="Work Orders by Region"
               className="iframeCssNew"
