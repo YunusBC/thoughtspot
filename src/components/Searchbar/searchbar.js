@@ -24,7 +24,7 @@ function makeSearch(datasourceGuid) {
 
 class SearchBar extends React.Component {
   componentDidMount() {
-    makeSearch("d2adc5cf-2475-4ef3-9e7a-b3ecb3abed3b");
+    makeSearch("0e3cfc50-e2cb-44cf-bde7-32e1c9023aa3");
   }
 
   render() {
