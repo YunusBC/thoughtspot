@@ -25,7 +25,7 @@ const Menu = () => {
                                </div>
                            </li>
                            <li className="nav-item active open">
-                           <Link to="/cards" className="nav-link nav-toggle">
+                           <Link to="/cards2" className="nav-link nav-toggle">
                                    <i className="material-icons">how_to_reg</i>
                                    <span className="title">Facility Management</span>
                                    <span className="selected"></span>
