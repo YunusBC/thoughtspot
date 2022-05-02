@@ -5,7 +5,7 @@ import { init, SearchEmbed, AuthType } from "@thoughtspot/visual-embed-sdk";
 // from 'https://cdn.jsdelivr.net/npm/@thoughtspot/visual-embed-sdk/dist/tsembed.es.js';
 
 init({
-  thoughtSpotHost: "http://blue-cloud.thoughtspot.cloud/",
+  thoughtSpotHost: "https://blue-cloud.thoughtspot.cloud/",
   authType: AuthType.None,
 });
 
