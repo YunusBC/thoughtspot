@@ -9,7 +9,7 @@ const MasterPage = () => {
     <div className="page-header-inner">
         <div className="page-logo">
             <a href="/"> 
-            <span className="logo-dark">
+            <span className="logo-default">
                 <LogoDark></LogoDark> </span>
             </a>
         </div> 
