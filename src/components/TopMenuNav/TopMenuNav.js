@@ -2,7 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 
-const TopMenuNav = () => {
+import {
+  BrowserRouter,
+  Routes, // instead of "Switch"
+  Route,
+  useLocation,
+} from "react-router-dom";
+
+function TopMenuWithoutNav() {
+  return <div>Now showing post </div>;
+}
+
+const TopMenuNav1 = () => {
   return (
     <div className="goUp">
       <ul className="topMenu">
@@ -35,6 +46,17 @@ const TopMenuNav = () => {
       </ul>
     </div>
   );
+};
+
+// ...
+const TopMenuNav = () => {
+  const location = useLocation();
+  console.log(
+    "🚀 ~ file: topMenuNav.js ~ line 54 ~ TopMenuNav ~ location",
+    location
+  );
+
+  return location.pathname === "/" ? <TopMenuNav1 /> : <TopMenuWithoutNav />;
 };
 
 export default TopMenuNav;
