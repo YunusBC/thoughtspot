@@ -12,21 +12,8 @@ const MasterPage = () => {
             <span className="logo-dark">
                 <LogoDark></LogoDark> </span>
             </a>
-        </div>
-<ul className="nav navbar-nav navbar-left in">
-  <li><a  className="menu-toggler sidebar-toggler font-size-20"><i className="fa fa-exchange" aria-hidden="true"></i></a></li>
-</ul>
-                
-        <ul className="nav navbar-nav navbar-left in">
-            <li><a  className="fullscreen-click font-size-20"><i className="fa fa-arrows-alt"></i></a></li>
-        </ul>
-
-        <ul className="nav navbar-nav navbar-left in">
-  <li><Link to="/searchbar" className="menu-toggler sidebar-toggler font-size-20"><i className="fa fa-search" aria-hidden="true"></i></Link></li>
-</ul>
-        <a  className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-            <span></span>
-        </a>
+        </div> 
+        <div>aaa bbb</div>
        <div className="top-menu">
        
         <ul className="nav navbar-nav pull-right">
