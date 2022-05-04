@@ -120,7 +120,7 @@ const MasterPage = () => {
                 data-hover="dropdown"
                 data-close-others="true"
               >
-                <img alt="" className="img-circle " src="assets/img/dp.jpg" />
+                <img alt="" className="img-circle " src="" />
               </a>
               <ul className="dropdown-menu dropdown-menu-default">
                 <li>
