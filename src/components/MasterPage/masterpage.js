@@ -12,8 +12,8 @@ const MasterPage = () => {
             <span className="logo-default">
               <LogoDark></LogoDark>
             </span>
-            <TopMenuNav> </TopMenuNav>
           </a>
+          <TopMenuNav> </TopMenuNav>
         </div>
 
         <div className="top-menu">
