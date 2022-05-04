@@ -6,3 +6,38 @@
     color: red;
     border: 2px dotted red;
 }
+
+.topMenu{ 
+    /* We first create a flex layout context */
+    display: flex;
+    
+    /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+     flex-direction: column;
+    flex-flow: row wrap;
+    
+    /* Then we define how is distributed the remaining space */
+    justify-content:  flex-start;
+    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .top-nav-item {  
+    color: greenyellow  ; 
+    /* background-color: #7FC6E1; */
+    text-align: center;
+    margin-right: 6px;
+    padding-left: 6px;
+    margin-top : 12px;
+  }
+  .page-logo a {
+    color: #044F95;  
+    font-size: 1em;
+    font-weight: normal;
+  }
