@@ -1,0 +1,8 @@
+.goUp {
+    top: 0 !important;
+    position: fixed !important;
+    width: 100% !important;
+    margin-left: 250px;
+    color: red;
+    border: 2px dotted red;
+}
