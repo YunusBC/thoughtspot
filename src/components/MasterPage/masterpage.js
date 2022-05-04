@@ -1,14 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-//import './index.css';
+import './index.css';
+import { ReactComponent as LogoDark } from '../../assets/img/logo-dark.svg';
 
 const MasterPage = () => {
   return (   
     <div className="page-header navbar navbar-fixed-top">
     <div className="page-header-inner">
         <div className="page-logo">
-            <a href="/">
-            <span className="logo-default"><img alt="" src={require('../../assets/img/logo.png')}/></span>
+            <a href="/"> 
+            <span className="logo-dark">
+                <LogoDark></LogoDark> </span>
             </a>
         </div>
 <ul className="nav navbar-nav navbar-left in">
