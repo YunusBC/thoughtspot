@@ -1,7 +1,7 @@
 import React from "react";
-import "./index2.css";
+import "./css/facility.css";
 
-const Cards2 = () => {
+const Facility = () => {
   return (
     <div className="cards2Page">
       <div className="page-content">
@@ -73,4 +73,4 @@ const Cards2 = () => {
   );
 };
 
-export default Cards2;
+export default Facility;

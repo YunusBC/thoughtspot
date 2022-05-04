@@ -8,7 +8,7 @@ const MasterPage = () => {
     <div className="page-header-inner">
         <div className="page-logo">
             <a href="/">
-            <span className="logo-default"><img alt="" src={require('../../assets/img/logo.png')}/></span>
+            <span className="logo-default"><img alt="" src=''/></span>
             </a>
         </div>
 <ul className="nav navbar-nav navbar-left in">
@@ -94,7 +94,7 @@ const MasterPage = () => {
             </li>
              <li className="dropdown dropdown-user">
                 <a  className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                    <img alt="" className="img-circle " src="assets/img/dp.jpg" />
+                    <img alt="" className="img-circle " src="" />
                 </a>
                 <ul className="dropdown-menu dropdown-menu-default">
                     <li>

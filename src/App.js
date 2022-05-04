@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MasterPage from "./components/MasterPage/masterpage";
-import Menu from "./components/Menu/menu";
-import Cards from "./components/Cards/cards";
-import Reports from "./components/Reports/reports";
-import Searchbar from "./components/Searchbar/searchbar";
+import VerticalMenu from "./components/Menu/menu";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/footer";
-import Cards2 from "./components/Cards/cards2";
+import Facility from "./components/pages/facility";
+import Lease from "./components/pages/lease";
+import Property from "./components/pages/property";
+import Liveboards from "./components/pages/liveboards";
 
 const App = () => {
   return (
@@ -15,14 +15,14 @@ const App = () => {
       <BrowserRouter>
         <MasterPage />
         <div className="page-container">
-          <Menu />
+          <VerticalMenu />
           <div className="page-content-wrapper">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/cards" element={<Cards />} />
-              <Route path="/reports" element={<Reports />} />
-              <Route path="/searchbar" element={<Searchbar />} />
-              <Route path="/cards2" element={<Cards2 />} />
+              <Route path="/facility" element={<Facility />} />
+              <Route path="/lease" element={<Lease />} />
+              <Route path="/property" element={<Property />} />
+              <Route path="/liveboards" element={<Liveboards />} />
             </Routes>
           </div>
         </div>
