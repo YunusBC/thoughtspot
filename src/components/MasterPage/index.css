@@ -1,0 +1,9 @@
+.logo-default {
+    display: inline-block;
+    width: 205px;
+  }
+
+  .right-buttons{
+    padding-top: 12px;
+    /* margin-top: 12px; */
+  }
