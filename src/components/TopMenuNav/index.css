@@ -1,12 +1,6 @@
 .goUp {
-    /* top: 0 !important; */
-    /* position: fixed !important; */
-    width: 60% ; 
     max-height: 45px;
     margin-bottom: 0;
-    /* margin-left: 250px; */
-    /* color: red;*/
-    /* border: 2px dotted red;  */
     margin-bottom: 10px;
     margin-top: 6px;
     margin-left: 24px;
@@ -14,8 +8,19 @@
 
 .breadCrumbHeader{
     color: #008DC4;
-    font-weight: 300;
+    font-size: 40px;
 }
+
+.alignCenter {
+  text-align: center !important;
+  padding: 0 25%;
+}
+
+.marginLeftRight {
+  margin: 0 10% !important;
+  width: 70%;
+}
+
 .topMenu{ 
     /* We first create a flex layout context */
     display: flex;
@@ -44,6 +49,9 @@
     margin-right: 6px;
     padding-left: 6px;
     margin-top : 12px;
+  }
+  .page-logo {
+    padding: 10px;
   }
   .page-logo a {
     color: #044F95;  

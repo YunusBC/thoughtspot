@@ -3,8 +3,7 @@ import "./css/facility.css";
 
 const Facility = () => {
   return (
-    <div className="cards2Page">
-      <div className="page-content">
+      <div>
         <div className="firstRow">
           <div className="firstRowCol1 row-span2">
             <div className="ts-frame">
@@ -69,7 +68,6 @@ const Facility = () => {
           </div>
         </div>
       </div>
-    </div>
   );
 };
 

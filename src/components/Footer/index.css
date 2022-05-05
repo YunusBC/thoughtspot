@@ -1,4 +1,5 @@
-.goDown {
+.center {
+    text-align: center;
     bottom: 0 !important;
     position: fixed !important;
     width: 100% !important;

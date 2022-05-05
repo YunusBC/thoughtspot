@@ -4,16 +4,18 @@ import "./index.css";
 
 function TopMenuWithoutNav() {
   return (
-    <div className="goUp">
-      <h2 className="breadCrumbHeader">Facility Management</h2>
+    <div className="ui container">
+      <div className="alignCenter">
+        <h2 className="breadCrumbHeader">Facility Management</h2>
+      </div>
     </div>
   );
 }
 
 const TopMenuNav1 = () => {
   return (
-    <div className="goUp">
-      <div class="five item menu">
+    <div className="ui container">
+      <div className="four item menu marginLeftRight">
         <Link className="item" to="/facility">
           Facility Management
         </Link>
@@ -26,7 +28,6 @@ const TopMenuNav1 = () => {
         <Link className="item" to="/liveboards">
           Personal Liveboards
         </Link>
-        <Link className="item" to="/cards2"></Link>
       </div>
     </div>
   );

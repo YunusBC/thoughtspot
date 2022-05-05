@@ -3,81 +3,31 @@ import React from 'react';
 
 const Home = () => {
   return (
-    <div className="page-content">
-                    <div className="row">
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht200">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht200">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht200">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht200">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div className="row">
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht300">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht300">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht300">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="col-md-3">
-                            <div className="card card-box">
-                                <div className="card-body min-ht300">
-                                    Placeholder
-                                </div>
-                            </div>
-                        </div>
-                   
-                    </div>
-
-     </div>
+    <div className="ui grid">
+        <div className="three column row">
+            <div className="column">
+                <iframe
+                        title="Total Work Orders"
+                        src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/8af809cb-88c3-4586-97ab-e062088d84e9/2c2f8672-3e53-4970-b0ab-c6f692bf9831"
+                        frameBorder="0">
+                </iframe>
+            </div>
+            <div className="column">
+                <iframe
+                        title="Total Work Orders"
+                        src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/8af809cb-88c3-4586-97ab-e062088d84e9/2c2f8672-3e53-4970-b0ab-c6f692bf9831"
+                        frameBorder="0">
+                </iframe>
+            </div>
+            <div className="column">
+                <iframe
+                        title="Total Work Orders"
+                        src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/8af809cb-88c3-4586-97ab-e062088d84e9/2c2f8672-3e53-4970-b0ab-c6f692bf9831"
+                        frameBorder="0">
+                </iframe>
+            </div>
+        </div>
+    </div>
   )
 }
 

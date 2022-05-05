@@ -3,13 +3,9 @@ import './index.css';
 
 const Footer = () => {
   return (
-<div className="page-footer goDown">
-  <div className="page-footer-inner"> © Copyright 2022 Blue.cloud Inc | Powered by <img alt='' src=''/>
+  <div className="center">© Copyright 2022 Blue.cloud Inc | Powered by Blue Cloud
+    <i className="thumbtack icon"></i>
   </div>
-  <div className="scroll-to-top">
-      <i className="material-icons">eject</i>
-  </div>
-</div>
   )
 }
 

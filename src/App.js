@@ -11,12 +11,15 @@ import Liveboards from "./components/pages/liveboards";
 
 const App = () => {
   return (
-    <div className="page-wrapper">
+    <div className="ui grid">
       <BrowserRouter>
+      <div class="sixteen wide column">
         <MasterPage />
-        <div className="page-container">
+        </div>
+        <div className="two wide column">
           <VerticalMenu />
-          <div className="page-content-wrapper">
+          </div>
+          <div className="fourteen wide column">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/facility" element={<Facility />} />
@@ -25,9 +28,10 @@ const App = () => {
               <Route path="/liveboards" element={<Liveboards />} />
             </Routes>
           </div>
-        </div>
       </BrowserRouter>
+      <div class="sixteen wide column">
       <Footer />
+      </div>
     </div>
   );
 };

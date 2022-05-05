@@ -8,7 +8,7 @@ import { useNavigate  } from "react-router-dom";
     const navigate = useNavigate ();
 
     const handleItemClick = (e, { name }) => {
-      setActiveItem = name;
+      setActiveItem(name);
       navigate(`/${name}`);
     }
 
