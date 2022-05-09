@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect, useContext } from "react";
 import "./css/facility.css";
+import SettingsContext from "../stateManagement/SettingsContext"
 
 const Facility = () => {
+  const context = useContext(SettingsContext);
+  useEffect(() => {
+    context.setTitle('Facility Management');
+    context.setIsLandingPage(false);
+  }, []);
   return (
       <div>
         <div className="firstRow">

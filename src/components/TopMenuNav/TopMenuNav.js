@@ -1,21 +1,20 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./index.css";
+import SettingsContext from "../stateManagement/SettingsContext"
 
-function TopMenuWithoutNav() {
+function TopMenuWithoutNav(props) {
+
   return (
-    <div className="ui container">
       <div className="alignCenter">
-        <h2 className="breadCrumbHeader">Facility Management</h2>
+        <h2 className="breadCrumbHeader">{ props.title }</h2>
       </div>
-    </div>
   );
 }
 
-const TopMenuNav1 = () => {
+const Submenu = () => {
   return (
-    <div className="ui container">
-      <div className="four item menu marginLeftRight">
+      <div className="ui four item menu">
         <Link className="item" to="/facility">
           Facility Management
         </Link>
@@ -29,19 +28,17 @@ const TopMenuNav1 = () => {
           Personal Liveboards
         </Link>
       </div>
-    </div>
   );
 };
 
-// ...
 const TopMenuNav = () => {
-  const location = useLocation();
-  console.log(
-    "🚀 ~ file: topMenuNav.js ~ line 54 ~ TopMenuNav ~ location",
-    location
-  );
-
-  return location.pathname === "/" ? <TopMenuNav1 /> : <TopMenuWithoutNav />;
+  return (
+    <SettingsContext.Consumer>
+      {context => (
+        context.settings.isLandingPage === true ? <Submenu /> : <TopMenuWithoutNav title={context.settings.title} />
+      )}
+    </SettingsContext.Consumer>
+  )
 };
 
 export default TopMenuNav;

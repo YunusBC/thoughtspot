@@ -1,50 +1,30 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./index.css";
 import { ReactComponent as LogoDark } from "../../assets/img/logo-dark.svg";
 import TopMenuNav from "../TopMenuNav/TopMenuNav";
+import { Icon } from 'semantic-ui-react';
+
 const MasterPage = () => {
   return (
-      <div className="ui secondary menu">
-        <div className="left menu">
-          <div className="page-logo">
-            <a href="/">
-              <span className="logo-default">
-                <LogoDark></LogoDark>
-              </span>
-            </a>
-          </div>
+    <>
+      <div className="two wide column">
+        <div className="page-logo">
+          <a href="/">
+            <span className="logo-default">
+              <LogoDark></LogoDark>
+            </span>
+          </a>
         </div>
-        <TopMenuNav> </TopMenuNav>
-          <div className="right-buttons">
-            <div className="ui three column grid ">
-              <div
-                className="column"
-                data-inverted=""
-                data-tooltip="Add users to your feed"
-                data-position="bottom left"
-              >
-                <i className="large user icon"></i>
-              </div>
-              <div
-                className="column"
-                data-inverted=""
-                data-tooltip="Notifications"
-                data-position="bottom center"
-              >
-                <i className="large bell icon"></i>
-              </div>
-              <div
-                className="column"
-                data-inverted=""
-                data-tooltip="Log Out"
-                data-position="bottom right"
-              >
-                <i className="large sign-out icon"></i>
-              </div>
-            </div>
-          </div>
       </div>
+      <div className="twelve wide column">
+        <TopMenuNav></TopMenuNav>
+      </div>
+      <div className="two wide column three-icons">
+        <Icon className="marginRight20px" name='user' size='large' tooltip='Add users to your feed' link />
+        <Icon className="marginRight20px" name='bell' size='large' tooltip='Notifications' link />
+        <Icon className="marginRight20px" name='sign-out' size='large' tooltip='Log Out' link />
+      </div>
+    </>
   );
 };
 

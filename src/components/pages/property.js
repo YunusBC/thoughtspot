@@ -1,6 +1,7 @@
 import React from "react";
 import "./css/property.css";
 import { init, SearchEmbed, AuthType } from "@thoughtspot/visual-embed-sdk";
+import SettingsContext from "../stateManagement/SettingsContext";
 
 init({
   thoughtSpotHost: "https://blue-cloud.thoughtspot.cloud/",
@@ -21,7 +22,14 @@ function makeSearch(datasourceGuid) {
 }
 
 class Property extends React.Component {
+  static contextType = SettingsContext;
+  constructor(props) {
+    super(props)
+  }
   componentDidMount() {
+    let myContext = this.context;
+    myContext.setTitle('Property Management');
+    myContext.setIsLandingPage(false);
     makeSearch("0e3cfc50-e2cb-44cf-bde7-32e1c9023aa3");
   }
 
