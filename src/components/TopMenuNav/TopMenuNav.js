@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./index.css";
 import SettingsContext from "../stateManagement/SettingsContext";
 import ProfileMenu from "./ProfileMenu";
