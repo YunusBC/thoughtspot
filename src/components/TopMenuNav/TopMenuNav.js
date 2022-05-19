@@ -1,44 +1,39 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
-import SettingsContext from "../stateManagement/SettingsContext"
+import SettingsContext from "../stateManagement/SettingsContext";
+import ProfileMenu from "./ProfileMenu";
 
 function TopMenuWithoutNav(props) {
-
   return (
-      <div className="alignCenter">
-        <h2 className="breadCrumbHeader">{ props.title }</h2>
-      </div>
+    <div className="alignCenter">
+      <h2 className="breadCrumbHeader">{props.title}</h2>
+    </div>
   );
 }
 
 const Submenu = () => {
   return (
-      <div className="ui four item menu">
-        <Link className="item" to="/facility">
-          Facility Management
-        </Link>
-        <Link className="item" to="/lease">
-          Lease Management
-        </Link>
-        <Link className="item" to="/property">
-          Property Management
-        </Link>
-        <Link className="item" to="/liveboards">
-          Personal Liveboards
-        </Link>
-      </div>
+    <div className="sub-menu">
+      <ProfileMenu></ProfileMenu>
+    </div>
   );
 };
 
 const TopMenuNav = () => {
   return (
-    <SettingsContext.Consumer>
-      {context => (
-        context.settings.isLandingPage === true ? <Submenu /> : <TopMenuWithoutNav title={context.settings.title} />
-      )}
-    </SettingsContext.Consumer>
-  )
+    <div className="fourteen wide column no-padding-and-margin">
+      <SettingsContext.Consumer>
+        {(context) =>
+          context.settings.isLandingPage === true ? (
+            <Submenu />
+          ) : (
+            <TopMenuWithoutNav title={context.settings.title} />
+          )
+        }
+      </SettingsContext.Consumer>
+    </div>
+  );
 };
 
 export default TopMenuNav;

@@ -1,6 +1,11 @@
 .collapsedMenuWidth {
-    max-width: 30px;
+  max-width: 30px;
 }
 .rightAlign {
-    text-align: right;
+  text-align: right;
+}
+
+.no-padding-and-margin {
+  padding: 0px !important;
+  margin: 0px !important;
 }

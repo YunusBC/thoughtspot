@@ -13,31 +13,38 @@ import SettingsContext from "./components/stateManagement/SettingsContext";
 import "./index.css";
 
 const Content = () => {
-    const context = useContext(SettingsContext);
+  const context = useContext(SettingsContext);
   return (
-      <div className="ui grid">
-        <BrowserRouter>
-            <MasterPage/>
-          {
-            !context.settings.isLandingPage &&
-            <div className={`${context.settings.isMenuCollapsed ? 'collapsedMenuWidth' : 'two'} wide column`}>
-              <VerticalMenu />
-            </div>
-          }
-          <div className={`${context.settings.isLandingPage ? 'sixteen' : 'fourteen'} wide column`}>
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/facility" element={<Facility />} />
-              <Route path="/lease" element={<Lease />} />
-              <Route path="/property" element={<Property />} />
-              <Route path="/liveboards" element={<Liveboards />} />
-            </Routes>
+    <div className="ui grid ">
+      <BrowserRouter>
+        <MasterPage />
+        {!context.settings.isLandingPage && (
+          <div
+            className={`${
+              context.settings.isMenuCollapsed ? "collapsedMenuWidth" : "two"
+            } wide column`}
+          >
+            <VerticalMenu />
           </div>
-        </BrowserRouter>
-        <div className="sixteen wide column">
-        <Footer />
+        )}
+        <div
+          className={`${
+            context.settings.isLandingPage ? "sixteen" : "fourteen"
+          } wide column`}
+        >
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/facility" element={<Facility />} />
+            <Route path="/lease" element={<Lease />} />
+            <Route path="/property" element={<Property />} />
+            <Route path="/liveboards" element={<Liveboards />} />
+          </Routes>
         </div>
+      </BrowserRouter>
+      <div className="sixteen wide column">
+        <Footer />
       </div>
+    </div>
   );
 };
 

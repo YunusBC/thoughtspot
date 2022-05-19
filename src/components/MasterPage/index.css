@@ -1,14 +1,14 @@
 .logo-default {
-    display: inline-block;
-    width: 205px;
-  }
+  display: inline-block;
+  width: 205px;
+}
 
-  .three-icons {
-    text-align: right !important;
-    right: 20px !important;
-    padding-top: 30px !important;
-  }
+.three-icons {
+  text-align: right !important;
+  right: 20px !important;
+  padding-top: 30px !important;
+}
 
-  .marginRight20px {
-    margin-right: 20px !important;
-  }
+.marginRight20px {
+  margin-right: 20px !important;
+}
