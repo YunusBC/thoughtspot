@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./index.css";
 import SettingsContext from "../stateManagement/SettingsContext";
 
-const SubmenuLinks = () => {
+const LandingMenuLinks = () => {
   return (
     <div className="ui blue four item inverted large menu no-padding-and-margin">
       <Link className="active item" to="/facility">
@@ -22,14 +22,14 @@ const SubmenuLinks = () => {
   );
 };
 
-const Submenu = () => {
+const LandingMenu = () => {
   return (
     <SettingsContext.Consumer>
       {(context) =>
-        context.settings.isLandingPage === true ? <SubmenuLinks /> : null
+        context.settings.isLandingPage === true ? <LandingMenuLinks /> : null
       }
     </SettingsContext.Consumer>
   );
 };
 
-export default Submenu;
+export default LandingMenu;

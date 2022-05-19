@@ -17,13 +17,15 @@
 }
 
 .page-logo {
-  padding: 10px;
+  padding: 50px 0px 0px 50px;
+  display: inline-block;
 }
 
 .page-logo a {
   color: #044f95;
   font-size: 1em;
   font-weight: normal;
+  padding: ;
 }
 
 .no-padding-and-margin {
@@ -36,5 +38,7 @@
 }
 
 .profile-menu {
-  text-align: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }

@@ -2,6 +2,7 @@ import React from "react";
 import "./index.css";
 import SettingsContext from "../stateManagement/SettingsContext";
 import ProfileMenu from "./ProfileMenu";
+import { ReactComponent as LogoDark } from "../../assets/img/logo-dark.svg";
 
 function TopMenuWithoutNav(props) {
   return (
@@ -11,9 +12,16 @@ function TopMenuWithoutNav(props) {
   );
 }
 
-const Submenu = () => {
+const LandingMenu = () => {
   return (
     <div className="sub-menu">
+      <div className="page-logo">
+        <a href="/">
+          <span className="logo-default">
+            <LogoDark></LogoDark>
+          </span>
+        </a>
+      </div>
       <ProfileMenu></ProfileMenu>
     </div>
   );
@@ -21,11 +29,11 @@ const Submenu = () => {
 
 const TopMenuNav = () => {
   return (
-    <div className="fourteen wide column no-padding-and-margin">
+    <div className="sixteen wide column no-padding-and-margin">
       <SettingsContext.Consumer>
         {(context) =>
           context.settings.isLandingPage === true ? (
-            <Submenu />
+            <LandingMenu />
           ) : (
             <TopMenuWithoutNav title={context.settings.title} />
           )
