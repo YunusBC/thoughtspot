@@ -5,7 +5,7 @@ import { Icon } from "semantic-ui-react";
 const ProfileMenu = () => {
   return (
     <div className="profile-menu two wide column four-icons">
-      <div class="ui icon secondary compact menu ">
+      <div class="ui icon secondary stackable compact menu ">
         <a href="/" class="item">
           <Icon name="bell" size="big" inverted="true" />
         </a>

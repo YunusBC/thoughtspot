@@ -5,7 +5,7 @@ import SettingsContext from "../stateManagement/SettingsContext";
 
 const LandingMenuLinks = () => {
   return (
-    <div className="ui blue four item inverted large menu no-padding-and-margin">
+    <div className="ui blue four item stackable inverted large menu no-padding-and-margin">
       <Link className="active item" to="/facility">
         Facility Management
       </Link>
