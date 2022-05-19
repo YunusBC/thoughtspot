@@ -1,31 +1,25 @@
 import React from "react";
-import "./profileMenu.css";
+import "./index.css";
 import { Icon } from "semantic-ui-react";
 
 const ProfileMenu = () => {
   return (
-    <div className="two wide column three-icons">
-      <Icon
-        className="marginRight20px"
-        name="user"
-        size="large"
-        tooltip="Add users to your feed"
-        link
-      />
-      <Icon
-        className="marginRight20px"
-        name="bell"
-        size="large"
-        tooltip="Notifications"
-        link
-      />
-      <Icon
-        className="marginRight20px"
-        name="sign-out"
-        size="large"
-        tooltip="Log Out"
-        link
-      />
+    <div className="profile-menu two wide column four-icons">
+      <div class="ui icon borderless compact menu ">
+        <a class="item">
+          <i class="bell icon"></i>
+        </a>
+        <a class="item">
+          <i class="video camera icon"></i>
+        </a>
+        <a class="item">
+          <i class="sign-out icon"></i>
+          <img
+            class="user-profile ui rounded image "
+            src={require("../../assets/img/user.png")}
+          ></img>
+        </a>
+      </div>
     </div>
   );
 };

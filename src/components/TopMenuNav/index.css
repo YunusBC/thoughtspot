@@ -30,3 +30,11 @@
   padding: 0px !important;
   margin: 0px !important;
 }
+
+.user-profile {
+  height: 90px;
+}
+
+.profile-menu {
+  text-align: right;
+}
