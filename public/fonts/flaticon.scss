@@ -1,0 +1,41 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?b44a2d63fcaa70414f271e492d6af059") format("truetype"),
+url("./flaticon.woff?b44a2d63fcaa70414f271e492d6af059") format("woff"),
+url("./flaticon.woff2?b44a2d63fcaa70414f271e492d6af059") format("woff2"),
+url("./flaticon.eot?b44a2d63fcaa70414f271e492d6af059#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b44a2d63fcaa70414f271e492d6af059#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "facility-management": "\f101",
+    "contract": "\f102",
+    "property": "\f103",
+    "display": "\f104",
+);
+
+.flaticon-facility-management:before {
+    content: map-get($flaticon-map, "facility-management");
+}
+.flaticon-contract:before {
+    content: map-get($flaticon-map, "contract");
+}
+.flaticon-property:before {
+    content: map-get($flaticon-map, "property");
+}
+.flaticon-display:before {
+    content: map-get($flaticon-map, "display");
+}

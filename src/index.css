@@ -4,3 +4,52 @@
 .rightAlign {
     text-align: right;
 }
+
+.top {
+    top:0;
+    position: absolute;
+}
+
+.left {
+    left:0;
+    position: absolute;
+}
+
+.width75Percentage {
+    display: inline-block;
+    width: 75%;
+    padding-left: initial !important;
+    padding-right: initial !important;
+  }
+  
+  .width25Percentage {
+    width: 25%;
+    display: inline-block;
+    padding-left: initial !important;
+    padding-right: initial !important;
+  }
+  
+  .width95Percentage {
+    width: 95%;
+    padding-left: initial !important;
+    padding-right: initial !important;
+  }
+  
+  .width05Percentage {
+    width: 5%;
+    padding-left: initial !important;
+    padding-right: initial !important;
+  }
+  
+  .width80Percentage {
+      display: block;
+    width: 80%;
+    padding-left: initial !important;
+    padding-right: initial !important;
+  }
+  
+  .width20Percentage {
+    width: 20%;
+    padding-left: initial !important;
+    padding-right: initial !important;
+  }

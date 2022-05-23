@@ -1,0 +1,33 @@
+@font-face {
+    font-family: "flaticon";
+    src: url("./flaticon.ttf?b44a2d63fcaa70414f271e492d6af059") format("truetype"),
+url("./flaticon.woff?b44a2d63fcaa70414f271e492d6af059") format("woff"),
+url("./flaticon.woff2?b44a2d63fcaa70414f271e492d6af059") format("woff2"),
+url("./flaticon.eot?b44a2d63fcaa70414f271e492d6af059#iefix") format("embedded-opentype"),
+url("./flaticon.svg?b44a2d63fcaa70414f271e492d6af059#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    font-size: 31px;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-facility-management:before {
+    content: "\f101";
+}
+.flaticon-contract:before {
+    content: "\f102";
+}
+.flaticon-property:before {
+    content: "\f103";
+}
+.flaticon-display:before {
+    content: "\f104";
+}

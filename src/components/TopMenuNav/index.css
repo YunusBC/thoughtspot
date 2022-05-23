@@ -1,10 +1,12 @@
 .breadCrumbHeader{
     color: #008DC4;
     font-size: 40px;
+    cursor: pointer;
 }
 
 .alignCenter {
   text-align: center !important;
+  height: 100px;
 }
 
 .page-logo {

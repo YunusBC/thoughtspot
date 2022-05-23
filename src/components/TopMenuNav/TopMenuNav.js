@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import SettingsContext from "../stateManagement/SettingsContext"
 
 function TopMenuWithoutNav(props) {
 
+  const context = useContext(SettingsContext);
+
+  function collapseMenuClicked () {
+    context.setIsMenuCollapsed(!context.settings.isMenuCollapsed)
+  }
   return (
       <div className="alignCenter">
-        <h2 className="breadCrumbHeader">{ props.title }</h2>
+        <h2 className="breadCrumbHeader" onClick={collapseMenuClicked}>{ props.title }</h2>
       </div>
   );
 }
@@ -34,8 +39,10 @@ const Submenu = () => {
 const TopMenuNav = () => {
   return (
     <SettingsContext.Consumer>
-      {context => (
-        context.settings.isLandingPage === true ? <Submenu /> : <TopMenuWithoutNav title={context.settings.title} />
+      {context => 
+      (
+        context.settings.isLandingPage === true ? <Submenu /> : 
+        <TopMenuWithoutNav title={context.settings.title} />
       )}
     </SettingsContext.Consumer>
   )

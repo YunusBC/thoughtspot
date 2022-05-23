@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
-import { Menu, List, Icon } from 'semantic-ui-react';
 import { useNavigate, Link  } from "react-router-dom";
-import SettingsContext from "../stateManagement/SettingsContext"
+import SettingsContext from "../stateManagement/SettingsContext";
+import topLeftFullLogo from "../../assets/img/logo.png";
+import topLeftPartialLogo from "../../assets/img/icon.png";
 import "./index.css";
 
   const VerticalMenu = () => {
 
     const navigate = useNavigate ();
     const [activeItem, setActiveItem] = useState('facility');
-    const handleItemClick = (e, { name }) => {
+    const handleItemClick = (name) => {
       setActiveItem(name);
       navigate(`/${name}`);
     }
@@ -19,62 +20,88 @@ import "./index.css";
       (
         !context.settings.isMenuCollapsed === true ?
         <>
-        {/* 
-          Uncomment if you want align the icon to the right
-          <div class="rightAlign">
-          <Icon name='angle double left' link onClick={() => context.setIsMenuCollapsed(!context.settings.isMenuCollapsed)} />
-        </div> 
-        */}
-        <Icon name='angle double left' link onClick={() => context.setIsMenuCollapsed(!context.settings.isMenuCollapsed)} />
-        <Menu pointing vertical>
-          <Menu.Item
-            name='facility'
-            active={activeItem === 'facility'}
-            onClick={handleItemClick}
-          />
-          <Menu.Item
-            name='lease'
-            active={activeItem === 'lease'}
-            onClick={handleItemClick}
-          />
-          <Menu.Item
-            name='property'
-            active={activeItem === 'property'}
-            onClick={handleItemClick}
-          />
-          <Menu.Item
-            name='liveboards'
-            active={activeItem === 'liveboards'}
-            onClick={handleItemClick}
-          />
-        </Menu>
+        <div className='topLeftDiv' onClick={() => handleItemClick('')}>
+            <img src={topLeftFullLogo} alt="blue cloud"></img>
+        </div>
+        <div className="bgColor row">   
+          <div>
+            <div className={`${activeItem === 'facility' ? 'active' : 'hover'} `} onClick={() => handleItemClick('facility')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-facility-management"/>
+              </div>
+              <div className='menuText'>
+                <p className='menuTitle'>Facility Management</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className={`${activeItem === 'lease' ? 'active' : 'hover'} `} onClick={() => handleItemClick('lease')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-contract"/>
+              </div>
+              <div className='menuText'>
+                <p className='menuTitle'>Lease Management</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className={`${activeItem === 'property' ? 'active' : 'hover'} `} onClick={() => handleItemClick('property')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-property"/>
+              </div>
+              <div className='menuText'>
+                <p className='menuTitle'>Property Management</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className={`${activeItem === 'liveboards' ? 'active' : 'hover'} `} onClick={() => handleItemClick('liveboards')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-display"/>
+              </div>
+              <div className='menuText'>
+                <p className='menuTitle'>Personal Liveboards</p>
+              </div>
+            </div>
+          </div>
+        </div>
         </>
       :
-        <>
-        <Icon name='angle double right' link onClick={() => context.setIsMenuCollapsed(!context.settings.isMenuCollapsed)}/>
-        <List>
-          <List.Item>
-            <Link to="/facility">
-              <List.Icon className='paddingBottom10px' name='users' size='large'/>
-            </Link>
-          </List.Item>
-          <List.Item>
-            <Link to="/lease">
-              <List.Icon className='paddingBottom10px' name='marker' size='large'/>
-            </Link>
-          </List.Item>
-          <List.Item>
-            <Link to="/property">
-              <List.Icon className='paddingBottom10px' name='mail' size='large'/>
-            </Link>
-          </List.Item>
-          <List.Item>
-            <Link to="/liveboards">
-              <List.Icon className='paddingBottom10px' name='linkify' size='large'/>
-            </Link>
-          </List.Item>
-        </List>
-        </>
+      <>
+        <div className='topLeftDivCollapsed' onClick={() => handleItemClick('')}>
+            <img src={topLeftPartialLogo} alt="blue cloud"></img>
+        </div>
+        <div className="bgColor row">   
+          <div>
+            <div className={`${activeItem === 'facility' ? 'activeCollapsed' : 'hoverCollapsed'} `} onClick={() => handleItemClick('facility')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-facility-management"/>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className={`${activeItem === 'lease' ? 'activeCollapsed' : 'hoverCollapsed'} `} onClick={() => handleItemClick('lease')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-contract"/>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className={`${activeItem === 'property' ? 'activeCollapsed' : 'hoverCollapsed'} `} onClick={() => handleItemClick('property')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-property"/>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div className={`${activeItem === 'liveboards' ? 'activeCollapsed' : 'hoverCollapsed'} `} onClick={() => handleItemClick('liveboards')}>
+              <div className='menuIconDiv'>
+                <i className="flaticon-display"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
       )
       }
     </SettingsContext.Consumer>
