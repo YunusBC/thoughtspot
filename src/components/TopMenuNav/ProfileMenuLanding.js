@@ -1,16 +1,16 @@
 import React from "react";
 import "./index.css";
-import { Icon, Menu } from "semantic-ui-react";
+import { Icon, Menu, Popup } from "semantic-ui-react";
 
-const ProfileMenu = () => {
+const ProfileMenuLanding = () => {
   return (
-    <div className="profile-menu">
+    <div className="profile-menu-landing">
       <Menu secondary stackable compact>
         <Menu.Item>
-          <Icon name="bell" size="big" color="blue" title="bell" />
+          <Icon name="bell" size="big" inverted="true" title="bell" />
         </Menu.Item>
         <Menu.Item>
-          <Icon name="setting" size="big" color="blue" title="Settings" />
+          <Icon name="setting" size="big" inverted="true" title="Settings" />
         </Menu.Item>
         <Menu.Item>
           <img
@@ -24,4 +24,4 @@ const ProfileMenu = () => {
   );
 };
 
-export default ProfileMenu;
+export default ProfileMenuLanding;
