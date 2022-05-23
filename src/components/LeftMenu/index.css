@@ -1,3 +1,103 @@
-.ui.list>.item {
-    padding-bottom: 8px !important;
+div.bgColor {
+    background-color: #0771C1;
+    height: 100%;
+}
+
+.bgColor > div {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100%;
+    margin-left: 30px;
+    color: white;
+    position: relative;
+}
+
+div.topLeftDiv {
+    background-color: #EFEDED;
+    padding: 30px;
+    cursor: pointer;
+    height: 100px;
+}
+
+div.topLeftDivCollapsed {
+    background-color: #EFEDED;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    height: 100px;
+}
+
+div.topLeftDiv > img {
+    max-width:100%;
+    max-height:100%;
+}
+
+div.topLeftDivCollapsed > img {
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    left: 5px;
+    padding:10px;
+}
+
+.menuIconDiv {
+    margin-right: 15px;
+    text-align: left;
+}
+
+.bgColor > div > div > div {
+    display: inline-block;
+    vertical-align: middle;
+    height: 40px;
+ }
+
+ .menuTitle {
+    font-size: 18px;
+    margin: initial !important;
+    line-height: initial !important;
+    transform: scaleY(1.4);
+    letter-spacing: 0.5px;
+    margin-left:15px;
+ }
+
+ div.hover:hover {
+    background-color:#06528B;
+    border-radius: 10px;
+    width: 80%;
+    cursor: pointer;
+ }
+
+ div.active {
+    background-color:#06528B;
+    border-radius: 10px;
+    width: 80%;
+    cursor: pointer;
+ }
+ 
+ div.activeCollapsed {
+    background-color: #06528B;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+ }
+
+ div.hoverCollapsed:hover {
+    background-color:#06528B;
+    border-radius: 10px;
+    width: 50%;
+    cursor: pointer;
+ }
+
+ div.menuText p {
+     margin-top:5px !important;
+     margin-bottom:5px !important;
+ }
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+
+font-size: 40px !important;
+
 }

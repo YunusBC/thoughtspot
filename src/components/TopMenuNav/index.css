@@ -1,7 +1,7 @@
 .breadCrumbHeader {
-  color: #008dc4;
-  font-size: 40px;
-
+  color: #008DC4;
+    font-size: 40px;
+    cursor: pointer;
   min-width: 200px;
 }
 
@@ -9,11 +9,11 @@
   /* outline: 2px dashed red; */
   min-height: 300px;
   background-image: url("../../assets/img/banner.png");
-  width: 100%;
-}
+  width: 100%; 
 
 .alignCenter {
   text-align: center !important;
+  height: 100px;
 }
 
 .inline-block {

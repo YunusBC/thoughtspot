@@ -1,7 +1,12 @@
-import React from 'react';
-//import './index.css';
+import React, { useEffect, useContext } from "react";
+import SettingsContext from "../stateManagement/SettingsContext"
 
 const Home = () => {
+const context = useContext(SettingsContext);
+useEffect(() => {
+    context.setTitle('');
+    context.setIsLandingPage(true);
+}, []);
   return (
     <div className="ui grid">
         <div className="three column row">

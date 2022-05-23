@@ -15,36 +15,56 @@ import "./index.css";
 const Content = () => {
   const context = useContext(SettingsContext);
   return (
-    <div className="ui grid ">
-      <BrowserRouter>
-        <MasterPage />
+    <BrowserRouter>
+      <div className="ui grid">
         {!context.settings.isLandingPage && (
-          <div
-            className={`${
-              context.settings.isMenuCollapsed ? "collapsedMenuWidth" : "two"
-            } wide column`}
-          >
-            <VerticalMenu />
-          </div>
+          <React.Fragment>
+            <div
+              className={`${
+                context.settings.isMenuCollapsed
+                  ? "width05Percentage"
+                  : "width20Percentage"
+              } `}
+            >
+              <VerticalMenu />
+            </div>
+            <div
+              className={`${
+                context.settings.isMenuCollapsed
+                  ? "width95Percentage"
+                  : "width80Percentage"
+              } `}
+            >
+              <MasterPage />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/facility" element={<Facility />} />
+                <Route path="/lease" element={<Lease />} />
+                <Route path="/property" element={<Property />} />
+                <Route path="/liveboards" element={<Liveboards />} />
+              </Routes>
+            </div>
+          </React.Fragment>
         )}
-        <div
-          className={`${
-            context.settings.isLandingPage ? "sixteen" : "fourteen"
-          } wide column`}
-        >
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/facility" element={<Facility />} />
-            <Route path="/lease" element={<Lease />} />
-            <Route path="/property" element={<Property />} />
-            <Route path="/liveboards" element={<Liveboards />} />
-          </Routes>
+        {context.settings.isLandingPage && (
+          <React.Fragment>
+            <div className="sixteen wide column">
+              <MasterPage />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/facility" element={<Facility />} />
+                <Route path="/lease" element={<Lease />} />
+                <Route path="/property" element={<Property />} />
+                <Route path="/liveboards" element={<Liveboards />} />
+              </Routes>
+            </div>
+          </React.Fragment>
+        )}
+        <div className="sixteen wide column">
+          <Footer />
         </div>
-      </BrowserRouter>
-      <div className="sixteen wide column">
-        <Footer />
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 

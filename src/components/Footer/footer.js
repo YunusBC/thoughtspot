@@ -3,8 +3,7 @@ import './index.css';
 
 const Footer = () => {
   return (
-  <div className="center">© Copyright 2022 Blue.cloud Inc | Powered by Blue Cloud
-    <i className="thumbtack icon"></i>
+  <div className="center">© Copyright 2022 Blue.cloud Inc | All Rights Reserved
   </div>
   )
 }
