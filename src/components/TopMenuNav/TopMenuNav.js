@@ -9,13 +9,6 @@ import { Icon } from "semantic-ui-react";
 function TopMenuWithoutNav(props) {
   return (
     <div>
-      <div className="page-logo">
-        <a href="/">
-          <span className="logo-default">
-            <LogoDark></LogoDark>
-          </span>
-        </a>
-      </div>
       <div className=" alignCenter inline-block">
         <h2 className="breadCrumbHeader">
           <Icon name="exchange" color="blue" title="bell" />
