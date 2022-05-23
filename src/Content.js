@@ -13,48 +13,58 @@ import SettingsContext from "./components/stateManagement/SettingsContext";
 import "./index.css";
 
 const Content = () => {
-    const context = useContext(SettingsContext);
+  const context = useContext(SettingsContext);
   return (
-    <BrowserRouter>  
+    <BrowserRouter>
       <div className="ui grid">
-          {            
-            !context.settings.isLandingPage &&
-            <React.Fragment>
-              <div className={`${context.settings.isMenuCollapsed ? 'width05Percentage' : 'width20Percentage'} `}>
-                <VerticalMenu />
-              </div>
-              <div className={`${context.settings.isMenuCollapsed ? 'width95Percentage' : 'width80Percentage'} `}>
-                <MasterPage/>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/facility" element={<Facility />} />
-                    <Route path="/lease" element={<Lease />} />
-                    <Route path="/property" element={<Property />} />
-                    <Route path="/liveboards" element={<Liveboards />} />
-                </Routes>
-              </div>
-            </React.Fragment>   
-          }
-          {            
-            context.settings.isLandingPage &&
-            <React.Fragment>
-              <div className="sixteen wide column">
-                <MasterPage/>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/facility" element={<Facility />} />
-                    <Route path="/lease" element={<Lease />} />
-                    <Route path="/property" element={<Property />} />
-                    <Route path="/liveboards" element={<Liveboards />} />
-                </Routes>
-              </div>
-            </React.Fragment>   
-          }
+        {!context.settings.isLandingPage && (
+          <React.Fragment>
+            <div
+              className={`${
+                context.settings.isMenuCollapsed
+                  ? "width05Percentage"
+                  : "width20Percentage"
+              } `}
+            >
+              <VerticalMenu />
+            </div>
+            <div
+              className={`${
+                context.settings.isMenuCollapsed
+                  ? "width95Percentage"
+                  : "width80Percentage"
+              } `}
+            >
+              <MasterPage />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/facility" element={<Facility />} />
+                <Route path="/lease" element={<Lease />} />
+                <Route path="/property" element={<Property />} />
+                <Route path="/liveboards" element={<Liveboards />} />
+              </Routes>
+            </div>
+          </React.Fragment>
+        )}
+        {context.settings.isLandingPage && (
+          <React.Fragment>
+            <div className="sixteen wide column">
+              <MasterPage />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/facility" element={<Facility />} />
+                <Route path="/lease" element={<Lease />} />
+                <Route path="/property" element={<Property />} />
+                <Route path="/liveboards" element={<Liveboards />} />
+              </Routes>
+            </div>
+          </React.Fragment>
+        )}
         <div className="sixteen wide column">
-        <Footer />
+          <Footer />
         </div>
       </div>
-      </BrowserRouter> 
+    </BrowserRouter>
   );
 };
 

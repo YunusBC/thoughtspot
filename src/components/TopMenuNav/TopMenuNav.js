@@ -1,51 +1,55 @@
-import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
 import "./index.css";
-import SettingsContext from "../stateManagement/SettingsContext"
+import SettingsContext from "../stateManagement/SettingsContext";
+import ProfileMenu from "./ProfileMenu";
+import ProfileMenuLanding from "./ProfileMenuLanding";
+import { ReactComponent as LogoDark } from "../../assets/img/logo-dark.svg";
+import { Icon } from "semantic-ui-react";
 
 function TopMenuWithoutNav(props) {
-
-  const context = useContext(SettingsContext);
-
-  function collapseMenuClicked () {
-    context.setIsMenuCollapsed(!context.settings.isMenuCollapsed)
-  }
   return (
-      <div className="alignCenter">
-        <h2 className="breadCrumbHeader" onClick={collapseMenuClicked}>{ props.title }</h2>
+    <div>
+      <div className=" alignCenter inline-block">
+        <h2 className="breadCrumbHeader">
+          <Icon name="exchange" color="blue" title="bell" />
+          {props.title}
+        </h2>
       </div>
+
+      <ProfileMenu></ProfileMenu>
+    </div>
   );
 }
 
-const Submenu = () => {
+const LandingMenu = () => {
   return (
-      <div className="ui four item menu">
-        <Link className="item" to="/facility">
-          Facility Management
-        </Link>
-        <Link className="item" to="/lease">
-          Lease Management
-        </Link>
-        <Link className="item" to="/property">
-          Property Management
-        </Link>
-        <Link className="item" to="/liveboards">
-          Personal Liveboards
-        </Link>
+    <div className="sub-menu">
+      <div className="page-logo-landing">
+        <a href="/">
+          <span className="logo-default-landing">
+            <LogoDark></LogoDark>
+          </span>
+        </a>
       </div>
+      <ProfileMenuLanding></ProfileMenuLanding>
+    </div>
   );
 };
 
 const TopMenuNav = () => {
   return (
-    <SettingsContext.Consumer>
-      {context => 
-      (
-        context.settings.isLandingPage === true ? <Submenu /> : 
-        <TopMenuWithoutNav title={context.settings.title} />
-      )}
-    </SettingsContext.Consumer>
-  )
+    <div className="sixteen wide column no-padding-and-margin">
+      <SettingsContext.Consumer>
+        {(context) =>
+          context.settings.isLandingPage === true ? (
+            <LandingMenu />
+          ) : (
+            <TopMenuWithoutNav title={context.settings.title} />
+          )
+        }
+      </SettingsContext.Consumer>
+    </div>
+  );
 };
 
 export default TopMenuNav;

@@ -1,7 +1,16 @@
-.breadCrumbHeader{
-    color: #008DC4;
-    font-size: 40px;
-    cursor: pointer;
+.breadCrumbHeader {
+  color: #008dc4;
+  font-size: 40px;
+  cursor: pointer;
+  min-width: 200px;
+  padding: 10px 0px 0px 20px;
+}
+
+.sub-menu {
+  /* outline: 2px dashed red; */
+  min-height: 300px;
+  background-image: url("../../assets/img/banner.png");
+  width: 100%;
 }
 
 .alignCenter {
@@ -9,12 +18,50 @@
   height: 100px;
 }
 
+.inline-block {
+  display: inline-block;
+}
+.page-logo-landing {
+  padding: 50px 0px 0px 50px;
+  display: inline-block;
+}
+
+.page-logo-landing a {
+  color: #044f95;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0;
+}
+
 .page-logo {
-    padding: 10px;
+  padding: 20px 50px 0px 20px;
+  display: inline-block;
+  background-color: lightgray;
 }
 
 .page-logo a {
-    color: #044F95;  
-    font-size: 1em;
-    font-weight: normal;
+  color: #044f95;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0;
+}
+.no-padding-and-margin {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+
+.user-profile {
+  height: 90px;
+}
+
+.profile-menu-landing {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.profile-menu {
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
