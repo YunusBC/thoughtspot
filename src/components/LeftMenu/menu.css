@@ -1,5 +1,6 @@
 div.bgColor {
     background-color: #0771C1;
+    min-height: 550px;
     height: 100%;
 }
 

@@ -1,47 +1,69 @@
-.firstRow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    grid-template-rows: 4fr 4fr 1em;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em;  
+body {
+    font-family: 'flaticon';
+    background-color: #E7F3FC !important;
+  }
+
+.titleCss {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color:#0771C1;
+    padding:30px;
 }
 
-.firstRowCol1 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-flll, minmax(300px, 1fr));
-    grid-column-gap: 1empx;
-    grid-row-gap: 1em;
+.displayBlock {
+    display: block;
 }
 
-.secondRow {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 4fr));
-    grid-template-rows: 8fr;
-    grid-column-gap: 1em;
-    grid-row-gap: 1em; 
-    min-height: 500px;
+.displayInlineBlock {
+    display: inline-block;
+    padding:20px;
 }
 
-.ts-frame{ 
-    border-width: 2px; 
-    height: 100%;
-    border-radius: 25px;
-    /* border: 2px dashed #73AD21; */
-    padding: 20px;
-    background-color: white;
-    min-width: 300px;
+.iframeDiv {
+    width: 100%;
 }
 
-.ts-frame iframe{
-    height: 100%;
-    width: 100%; 
+.iframeCss {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0p;
+    border: 0px;
 }
 
-.col-span2 { 
-    grid-column: span 2 ; 
+.iframeSmallKPI {
+    height: 240px;
+    width:100%;
 }
 
-.row-span2 {
-    grid-row: span 2;
+.marginBottom10px {
+    margin-bottom:10px;
+}
+
+.iframeBigKPI {
+    height: 500px;
+    width:100%;
+}
+
+.width100Percentage {
+    width: 100%;
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.width30Percentage {
+    width: 30%;
+}
+
+.width40Percentage {
+    width: 40%;
+}
+
+.width34Percentage {
+    width: 34%;
+}
+
+.width32Percentage {
+    width: 32%;
 }

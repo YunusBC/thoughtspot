@@ -1,8 +1,19 @@
-.margin20px {
-    padding: 0 20px;
+body {
+    font-family: 'flaticon';
+    background-color: #E7F3FC !important;
+  }
+
+.titleCss {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color:#0771C1;
+    padding:30px;
 }
 
-.embedSearch {
-    height: 600px;
-    width: 100%;
+.iframeCss {
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 0p;
+    border: 0px;
 }

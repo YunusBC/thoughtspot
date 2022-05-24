@@ -14,7 +14,7 @@ const ProfileMenu = () => {
         </Menu.Item>
         <Menu.Item>
           <img
-            class="user-profile ui rounded image "
+            className="user-profile ui rounded image "
             src={require("../../assets/img/user.png")}
             title="Profile"
           ></img>

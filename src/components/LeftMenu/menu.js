@@ -3,7 +3,7 @@ import { useNavigate, Link  } from "react-router-dom";
 import SettingsContext from "../stateManagement/SettingsContext";
 import topLeftFullLogo from "../../assets/img/logo.png";
 import topLeftPartialLogo from "../../assets/img/icon.png";
-import "./index.css";
+import "./menu.css";
 
   const VerticalMenu = () => {
 

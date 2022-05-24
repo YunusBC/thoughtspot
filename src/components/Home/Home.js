@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from "react";
 import SettingsContext from "../stateManagement/SettingsContext"
+import './index.css';
 
 const Home = () => {
 const context = useContext(SettingsContext);
@@ -8,28 +9,48 @@ useEffect(() => {
     context.setIsLandingPage(true);
 }, []);
   return (
-    <div className="ui grid">
-        <div className="three column row">
-            <div className="column">
-                <iframe
-                        title="Total Work Orders"
-                        src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/8af809cb-88c3-4586-97ab-e062088d84e9/2c2f8672-3e53-4970-b0ab-c6f692bf9831"
-                        frameBorder="0">
-                </iframe>
+    <div className="mainDiv">
+        <div className="textBlock">
+            <p><span className="blueColor">Our Mission </span>is to provide</p>
+            <p>extraordinary services and exceed</p>
+            <p>our client's expectations by</p>
+            <p><span className="blueColor">always committing to the highest</span></p>
+            <p><span className="blueColor">levels of professionalism, ethics</span></p>
+            <p><span className="blueColor">and standards </span>in the real estate </p>
+            <p>industry.</p>
+        </div>
+        <div className="Divblock">
+            <div className="displayBlock">
+                <div className="displayInlineBlock">
+                    <iframe width="90%" height="200px"
+                            title="Total Work Orders"
+                            src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/b7489cf1-9581-4fab-9c46-292549772aa3/618d1d5f-a7eb-492c-a238-8624a984024a"
+                            frameBorder="0">
+                    </iframe>
+                </div>
+                <div className="displayInlineBlock">
+                    <iframe width="90%" height="200px"
+                            title="Total Work Orders"
+                            src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/b7489cf1-9581-4fab-9c46-292549772aa3/3f1c3804-563e-4d4f-9ed5-89516a0a3f3a"
+                            frameBorder="0">
+                    </iframe>
+                </div>
             </div>
-            <div className="column">
-                <iframe
-                        title="Lease Expiring"
-                        src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/b7489cf1-9581-4fab-9c46-292549772aa3/22b25a53-bd48-496c-aa3b-3b867bdfd2bc"
-                        frameBorder="0">
-                </iframe>
-            </div>
-            <div className="column">
-                <iframe
-                        title="Total Properties"
-                        src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/b7489cf1-9581-4fab-9c46-292549772aa3/20dfe116-19ba-46a6-a7b1-fe24a9959a91"
-                        frameBorder="0">
-                </iframe>
+            <div className="displayBlock">
+                <div className="displayInlineBlock">
+                    <iframe width="90%" height="200px"
+                            title="Total Work Orders"
+                            src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/b7489cf1-9581-4fab-9c46-292549772aa3/aea8d1c3-ddcd-4479-8223-7f464995d2d8"
+                            frameBorder="0">
+                    </iframe>
+                </div>
+                <div className="displayInlineBlock">
+                    <iframe width="90%" height="200px"
+                            title="Total Work Orders"
+                            src="https://blue-cloud.thoughtspot.cloud/#/embed/viz/b7489cf1-9581-4fab-9c46-292549772aa3/22b25a53-bd48-496c-aa3b-3b867bdfd2bc"
+                            frameBorder="0">
+                    </iframe>
+                </div>
             </div>
         </div>
     </div>

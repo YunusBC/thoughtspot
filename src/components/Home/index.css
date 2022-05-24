@@ -1,0 +1,47 @@
+body {
+    font-family: 'flaticon';
+    background-color: #E7F3FC !important;
+}
+
+.mainDiv {
+    display: block;
+    width: 100%;
+    min-height: 550px;
+}
+
+div.textBlock p {
+    color: black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.blueColor {
+ color:#0771C1 !important;   
+}
+
+.textBlock {
+    display: inline-block;
+    width: 30%;
+    padding-top: 60px;
+    padding-left: 80px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.Divblock {
+    display:inline-block;
+    width: 70%;
+}
+
+.displayBlock {
+    display: block;
+}
+.displayInlineBlock {
+    display: inline-block;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
