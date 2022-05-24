@@ -12,7 +12,7 @@ function TopMenuWithoutNav(props) {
   return (
     <SettingsContext.Consumer>
       {(context) => (
-        <div className="bannerHeight">
+        <div className="bannerHeight top-menu-without-nav">
           <Grid padded stackable verticalAlign="middle">
             <Grid.Row>
               <Grid.Column>
@@ -28,7 +28,14 @@ function TopMenuWithoutNav(props) {
                     )
                   }
                 >
-                  <Icon name="exchange" size="big" color="blue" title="bell" />
+                  <Icon
+                    name="exchange"
+                    size="big"
+                    color="blue"
+                    title={`${
+                      context.settings.isMenuCollapsed ? "Expand" : "Collapse"
+                    } `}
+                  />
                 </button>
               </Grid.Column>
               <Grid.Column width={5}>

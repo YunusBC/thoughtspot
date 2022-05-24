@@ -8,7 +8,7 @@
 
 .sub-menu {
   /* outline: 2px dashed red; */
-  min-height: 150px;
+  min-height: 300px;
   background-image: url("../../assets/img/banner.png");
   width: 100%;
 }
@@ -70,7 +70,8 @@
 }
 
 .search-png {
-  padding: 24px 0 0 0;
+  padding: 24px 0 0 0px;
+  max-height: 70px;
 }
 
 a.hover:hover {
@@ -140,4 +141,8 @@ div.bgColor {
 .simple-menu a:hover {
   background-color: rgb(0 83 136);
   color: white;
+}
+
+.top-menu-without-nav {
+  background-color: white;
 }
