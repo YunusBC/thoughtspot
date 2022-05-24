@@ -146,3 +146,10 @@ div.bgColor {
 .top-menu-without-nav {
   background-color: white;
 }
+
+.collapse-button {
+  outline: "none";
+  border: 0;
+  padding-top: 12px;
+  background-color: white;
+}

@@ -17,11 +17,7 @@ function TopMenuWithoutNav(props) {
             <Grid.Row>
               <Grid.Column>
                 <button
-                  style={{
-                    outline: "none",
-                    border: 0,
-                    background: "transparent",
-                  }}
+                  className="collapse-button"
                   onClick={() =>
                     context.setIsMenuCollapsed(
                       !context.settings.isMenuCollapsed
@@ -42,8 +38,7 @@ function TopMenuWithoutNav(props) {
                 <h2 className="breadCrumbHeader">{props.title}</h2>
               </Grid.Column>
               <Grid.Column width={4}>
-                {context.settings.title !== "Search Data" &&
-                context.settings.title !== "Property" ? (
+                {context.settings.title !== "Search Data" ? (
                   <Link to="/search">
                     <img src={SearchPng} alt="Search" className="search-png" />
                   </Link>
