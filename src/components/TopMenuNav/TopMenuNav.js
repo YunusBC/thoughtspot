@@ -35,7 +35,11 @@ function TopMenuWithoutNav(props) {
                 </button>
               </Grid.Column>
               <Grid.Column width={5}>
-                <h2 className="breadCrumbHeader">{props.title}</h2>
+                <h2 className="breadCrumbHeader">
+                  {context.settings.title !== "Search Data"
+                    ? props.title
+                    : "Facility Management"}
+                </h2>
               </Grid.Column>
               <Grid.Column width={4}>
                 {context.settings.title !== "Search Data" ? (
