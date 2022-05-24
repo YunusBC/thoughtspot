@@ -102,21 +102,6 @@ a.hoverCollapsed:hover {
   cursor: pointer;
 }
 
-div.bgColor {
-  background-color: #0771c1;
-  height: 100%;
-}
-
-.bgColor > div {
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 100%;
-  margin-left: 30px;
-  color: white;
-  position: relative;
-}
-
 .simple-menu {
   display: flex;
   flex-flow: row wrap;

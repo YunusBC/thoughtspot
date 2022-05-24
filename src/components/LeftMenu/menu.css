@@ -2,16 +2,15 @@ div.bgColor {
     background-color: #0771C1;   
     height: 100%;
     min-height: 450px;
+    color: white;
 }
 
-.bgColor > div {
-    display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    margin-left: 30px;
+div.bgColorCollapsed {
+    background-color: #0771C1;   
+    height: 100%;
+    min-height: 450px;
     color: white;
-    position: relative;
+    text-align: center;
 }
 
 div.topLeftDiv {
@@ -28,7 +27,7 @@ div.topLeftDivCollapsed {
     cursor: pointer;
     text-align: center;
     vertical-align: middle;
-    height: 100px;
+    height: 150px;
 }
 
 div.topLeftDiv > img {
@@ -39,22 +38,30 @@ div.topLeftDiv > img {
 
 div.topLeftDivCollapsed > img {
     height: 50px;
-    position: absolute;
-    top: 15px;
-    left: 5px;
-    padding:10px;
+    position: fixed;
+    top: 40px;
+    left: 10px;
+}
+
+div.menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 5%;
+}
+
+div.collapsedMenu {
+    margin-left: 5%;
 }
 
 .menuIconDiv {
+    display:inline-block;
     margin-right: 15px;
-    text-align: left;
 }
 
-.bgColor > div > div > div {
-    display: inline-block;
-    vertical-align: middle;
-    height: 40px;
- }
+.centerCss {
+    text-align: center;
+}
 
  .menuTitle {
     font-size: 18px;
@@ -62,40 +69,56 @@ div.topLeftDivCollapsed > img {
     line-height: initial !important;
     transform: scaleY(1.4);
     letter-spacing: 0.5px;
-    margin-left:15px;
+ }
+
+ .paddingTop50px {
+    padding-top: 50px;
+ }
+
+ div.itemContainer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+ }
+
+ .itemContainerCollapsed {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
  }
 
  div.hover:hover {
-    background-color:#06528B;
-    border-radius: 10px;
-    width: 80%;
+    background-color: #06528B;
     cursor: pointer;
  }
 
  div.active {
-    background-color:#06528B;
-    border-radius: 10px;
-    width: 80%;
+    background-color: #06528B;
     cursor: pointer;
  }
  
  div.activeCollapsed {
     background-color: #06528B;
-    border-radius: 10px;
-    width: 50%;
     cursor: pointer;
  }
 
  div.hoverCollapsed:hover {
-    background-color:#06528B;
-    border-radius: 10px;
-    width: 50%;
+    background-color: #06528B;
     cursor: pointer;
  }
 
+ div.menuText {
+    display: inline-block;
+    position: absolute;
+    margin-top: 7px;
+ }
+
  div.menuText p {
-     margin-top:5px !important;
-     margin-bottom:5px !important;
+     margin-top:initial !important;
+     margin-bottom:initial !important;
  }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
@@ -106,7 +129,26 @@ font-size: 40px !important;
 }
 
 @media only screen and (min-height: 900px) {
-    div.bgColor {
-        min-height: 800px;
+    div.bgColor, div.bgColorCollapsed {
+        min-height: 700px;
     }
 }
+
+@media only screen and (min-width: 1600px) {
+    div.itemContainer {
+        width:70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    div.itemContainerCollapsed {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .menuTitle {
+        transform: scaleY(1.5);
+     }
+     div.topLeftDivCollapsed > img {
+        left: 20px;
+     }
+}
+
