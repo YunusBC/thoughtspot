@@ -46,7 +46,16 @@ function TopMenuWithoutNav(props) {
                   <Link to="/search">
                     <img src={SearchPng} alt="Search" className="search-png" />
                   </Link>
-                ) : null}
+                ) : (
+                  <Link to="/search">
+                    <img
+                      src={SearchPng}
+                      alt="Search"
+                      className="search-png"
+                      style={{ opacity: 0 }}
+                    />
+                  </Link>
+                )}
               </Grid.Column>
             </Grid.Row>
           </Grid>
