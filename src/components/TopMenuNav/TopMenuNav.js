@@ -1,23 +1,54 @@
-import React from "react";
 import "./index.css";
 import SettingsContext from "../stateManagement/SettingsContext";
 import ProfileMenu from "./ProfileMenu";
 import ProfileMenuLanding from "./ProfileMenuLanding";
 import { ReactComponent as LogoDark } from "../../assets/img/logo-dark.svg";
-import { Icon } from "semantic-ui-react";
+import SearchPng from "../../assets/img/search.png";
+
+import { Icon, Grid } from "semantic-ui-react";
 
 function TopMenuWithoutNav(props) {
-  return (
-    <div>
-      <div className=" alignCenter inline-block">
-        <h2 className="breadCrumbHeader">
-          <Icon name="exchange" color="blue" title="bell" />
-          {props.title}
-        </h2>
-      </div>
+  const handleClick = (context) => {
+    console.log(
+      "🚀 ~ file: TopMenuNav.js ~ line 13 ~ handleClick ~ context.settings.isMenuCollapsed ",
+      context.settings.isMenuCollapsed
+    );
+    context.settings.isMenuCollapsed = !context.settings.isMenuCollapsed;
+  };
 
-      <ProfileMenu></ProfileMenu>
-    </div>
+  return (
+    <SettingsContext.Consumer>
+      {(context) => (
+        <div>
+          <Grid padded stackable verticalAlign="bottom">
+            <Grid.Row>
+              <Grid.Column>
+                <button
+                  style={{
+                    outline: "none",
+                    border: 0,
+                    background: "transparent",
+                  }}
+                  onClick={(_) => {
+                    handleClick(context);
+                  }}
+                >
+                  <Icon name="exchange" size="big" color="blue" title="bell" />
+                </button>
+              </Grid.Column>
+              <Grid.Column width={5}>
+                <h2 className="breadCrumbHeader">{props.title}</h2>
+              </Grid.Column>
+              <Grid.Column width={4}>
+                <img src={SearchPng} alt="Search" className="search-png" />
+              </Grid.Column>
+            </Grid.Row>
+          </Grid>
+
+          <ProfileMenu></ProfileMenu>
+        </div>
+      )}
+    </SettingsContext.Consumer>
   );
 }
 
