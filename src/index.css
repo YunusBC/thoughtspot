@@ -1,8 +1,11 @@
-.collapsedMenuWidth {
-  max-width: 30px;
+.ui.grid>.column:not(.row), .ui.grid>.row>.column {
+  padding-left: initial !important;
+  padding-right: initial !important;
 }
-.rightAlign {
-  text-align: right;
+
+.ui.grid>.column:not(.row) {
+  padding-top: initial !important;
+  padding-bottom: initial !important;
 }
 
 .top {
@@ -13,20 +16,6 @@
 .left {
   left: 0;
   position: absolute;
-}
-
-.width75Percentage {
-  display: inline-block;
-  width: 75%;
-  padding-left: initial !important;
-  padding-right: initial !important;
-}
-
-.width25Percentage {
-  width: 25%;
-  display: inline-block;
-  padding-left: initial !important;
-  padding-right: initial !important;
 }
 
 .width95Percentage {
