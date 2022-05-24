@@ -29,9 +29,11 @@ function TopMenuWithoutNav(props) {
                     border: 0,
                     background: "transparent",
                   }}
-                  onClick={(_) => {
-                    handleClick(context);
-                  }}
+                  onClick={() =>
+                    context.setIsMenuCollapsed(
+                      !context.settings.isMenuCollapsed
+                    )
+                  }
                 >
                   <Icon name="exchange" size="big" color="blue" title="bell" />
                 </button>

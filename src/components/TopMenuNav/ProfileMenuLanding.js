@@ -4,8 +4,8 @@ import { Icon, Menu } from "semantic-ui-react";
 
 const ProfileMenuLanding = () => {
   return (
-    <div className="profile-menu-landing">
-      <Menu secondary stackable compact>
+    <div className="profile-menu-landing ">
+      <Menu secondary stackable compact className="bgColor">
         <Menu.Item>
           <Icon name="bell" size="big" inverted title="bell" />
         </Menu.Item>

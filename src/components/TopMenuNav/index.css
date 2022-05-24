@@ -15,9 +15,11 @@
 
 .alignCenter {
   text-align: center !important;
-  height: 100px;
 }
 
+.mh-100 {
+  height: 100px;
+}
 .inline-block {
   display: inline-block;
 }
@@ -69,4 +71,47 @@
 .search-png {
   max-height: 50px;
   padding: 12px 0 0 0;
+}
+
+a.hover:hover {
+  background-color: #06528b;
+  border-radius: 10px;
+  width: 80%;
+  cursor: pointer;
+}
+
+a.active {
+  background-color: #06528b;
+  border-radius: 10px;
+  width: 80%;
+  cursor: pointer;
+}
+
+a.activeCollapsed {
+  background-color: #06528b;
+  border-radius: 10px;
+  width: 50%;
+  cursor: pointer;
+}
+
+a.hoverCollapsed:hover {
+  background-color: #06528b;
+  border-radius: 10px;
+  width: 50%;
+  cursor: pointer;
+}
+
+div.bgColor {
+  background-color: #0771c1;
+  height: 100%;
+}
+
+.bgColor > div {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-left: 30px;
+  color: white;
+  position: relative;
 }
