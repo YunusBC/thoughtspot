@@ -23,7 +23,8 @@ import "./menu.css";
         <div className='topLeftDiv bannerHeight' onClick={() => handleItemClick('')}>
             <img src={topLeftFullLogo} alt="blue cloud"></img>
         </div>
-        <div className="bgColor row">   
+        <div className="bgColor row">
+          <div></div>
           <div>
             <div className={`${activeItem === 'facility' ? 'active' : 'hover'} `} onClick={() => handleItemClick('facility')}>
               <div className='menuIconDiv'>
