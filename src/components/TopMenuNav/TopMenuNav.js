@@ -12,7 +12,7 @@ function TopMenuWithoutNav(props) {
     <SettingsContext.Consumer>
       {(context) => (
         <div>
-          <Grid padded stackable verticalAlign="bottom">
+          <Grid padded stackable verticalAlign="middle">
             <Grid.Row>
               <Grid.Column>
                 <button
