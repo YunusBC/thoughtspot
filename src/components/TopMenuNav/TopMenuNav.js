@@ -42,8 +42,9 @@ function TopMenuWithoutNav(props) {
                 <h2 className="breadCrumbHeader">{props.title}</h2>
               </Grid.Column>
               <Grid.Column width={4}>
-                {context.settings.title !== "Property Management" ? (
-                  <Link to="/property">
+                {context.settings.title !== "Search Data" &&
+                context.settings.title !== "Property" ? (
+                  <Link to="/search">
                     <img src={SearchPng} alt="Search" className="search-png" />
                   </Link>
                 ) : null}
