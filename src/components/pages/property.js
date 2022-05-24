@@ -38,7 +38,7 @@ class Property extends React.Component {
       <>
       <div className="row titleCss">Search Data</div>
       <div className="row padding20px">
-        <div id="embed" className="iframeCss"></div>
+        <div id="embed" className="propertyIframeCss"></div>
       </div>
     </>
     );
