@@ -4,6 +4,7 @@ import ProfileMenu from "./ProfileMenu";
 import ProfileMenuLanding from "./ProfileMenuLanding";
 import { ReactComponent as LogoDark } from "../../assets/img/logo-dark.svg";
 import SearchPng from "../../assets/img/search.png";
+import { Link } from "react-router-dom";
 
 import { Icon, Grid } from "semantic-ui-react";
 
@@ -12,7 +13,7 @@ function TopMenuWithoutNav(props) {
     <SettingsContext.Consumer>
       {(context) => (
         <div className="bannerHeight">
-          <Grid padded stackable verticalAlign="bottom">
+          <Grid padded stackable verticalAlign="middle">
             <Grid.Row>
               <Grid.Column>
                 <button
@@ -35,7 +36,9 @@ function TopMenuWithoutNav(props) {
               </Grid.Column>
               <Grid.Column width={4}>
                 {context.settings.title !== "Property Management" ? (
-                  <img src={SearchPng} alt="Search" className="search-png" />
+                  <Link to="/property">
+                    <img src={SearchPng} alt="Search" className="search-png" />
+                  </Link>
                 ) : null}
               </Grid.Column>
             </Grid.Row>

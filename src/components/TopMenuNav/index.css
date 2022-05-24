@@ -20,6 +20,7 @@
 .mh-100 {
   height: 100px;
 }
+
 .inline-block {
   display: inline-block;
 }
@@ -69,8 +70,7 @@
 }
 
 .search-png {
-  max-height: 50px;
-  padding: 12px 0 0 0;
+  padding: 24px 0 0 0;
 }
 
 a.hover:hover {
@@ -114,4 +114,30 @@ div.bgColor {
   margin-left: 30px;
   color: white;
   position: relative;
+}
+
+.simple-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0 115 189);
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.simple-menu a {
+  text-decoration: none;
+  font-size: 12pt;
+  color: white;
+  margin-left: 50px;
+  align-self: center;
+  padding: 18px;
+}
+
+.simple-menu a:hover {
+  background-color: rgb(0 83 136);
+  color: white;
 }
