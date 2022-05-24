@@ -5,6 +5,7 @@ import VerticalMenu from "./components/LeftMenu/menu";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/footer";
 import Facility from "./components/pages/facility";
+import Search from "./components/pages/search";
 import Lease from "./components/pages/lease";
 import Property from "./components/pages/property";
 import Liveboards from "./components/pages/liveboards";
@@ -42,6 +43,7 @@ const Content = () => {
                 <Route path="/lease" element={<Lease />} />
                 <Route path="/property" element={<Property />} />
                 <Route path="/liveboards" element={<Liveboards />} />
+                <Route path="/search" element={<Search />} />
               </Routes>
             </div>
           </React.Fragment>
@@ -56,11 +58,12 @@ const Content = () => {
                 <Route path="/lease" element={<Lease />} />
                 <Route path="/property" element={<Property />} />
                 <Route path="/liveboards" element={<Liveboards />} />
+                <Route path="/search" element={<Search />} />
               </Routes>
             </div>
           </React.Fragment>
         )}
-        <div className="sixteen wide column">
+        <div className="fullWidth">
           <Footer />
         </div>
       </div>

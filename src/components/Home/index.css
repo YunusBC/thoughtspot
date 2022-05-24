@@ -6,7 +6,7 @@ body {
 .mainDiv {
     display: block;
     width: 100%;
-    min-height: 550px;
+    min-height: 450px;
 }
 
 div.textBlock p {
@@ -24,15 +24,17 @@ div.textBlock p {
 .textBlock {
     display: inline-block;
     width: 30%;
-    padding-top: 60px;
     padding-left: 80px;
     text-align: left;
+    padding-top: 60px;
     vertical-align: top;
 }
 
 .Divblock {
     display:inline-block;
     width: 70%;
+    padding-top:20px;
+    padding-bottom:20px;
 }
 
 .displayBlock {
@@ -41,7 +43,6 @@ div.textBlock p {
 .displayInlineBlock {
     display: inline-block;
     width: 50%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
-

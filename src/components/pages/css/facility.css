@@ -1,24 +1,18 @@
 body {
     font-family: 'flaticon';
     background-color: #E7F3FC !important;
-  }
-
-.titleCss {
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    color:#0771C1;
-    padding:30px;
 }
 
 .displayBlock {
     display: block;
 }
 
-.displayInlineBlock {
+.facDisplayInlineBlock {
     display: inline-block;
-    padding:20px;
+    padding-right:10px;
+    padding-left:10px;
 }
+
 
 .iframeDiv {
     width: 100%;
@@ -32,7 +26,7 @@ body {
 }
 
 .iframeSmallKPI {
-    height: 240px;
+    height: 245px;
     width:100%;
 }
 
@@ -48,8 +42,7 @@ body {
 .width100Percentage {
     width: 100%;
     display: block;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding: 20px;    
 }
 
 .width30Percentage {

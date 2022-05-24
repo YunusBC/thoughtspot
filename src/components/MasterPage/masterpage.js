@@ -6,7 +6,7 @@ import LandingMenu from "../TopMenuNav/LandingMenu";
 const MasterPage = () => {
   return (
     <>
-      <div className="logo-row ui grid sixteen wide column no-padding-and-margin">
+      <div className="logo-row ui grid sixteen wide column no-padding-and-margin bannerHeight">
         <TopMenuNav></TopMenuNav>
       </div>
 

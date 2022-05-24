@@ -10,9 +10,9 @@ const Facility = () => {
   }, []);
   return (
     <>
-    <div className="row titleCss">Workorder Insights - 2022</div>
+      <div className="row titleCss">Workorder Insights - 2022</div>
       <div className="width100Percentage">
-        <div className="displayInlineBlock width30Percentage">
+        <div className="facDisplayInlineBlock width30Percentage">
           <div className="displayBlock iframeDiv marginBottom10px">
             <iframe
                 title="Total Work Orders"
@@ -30,7 +30,7 @@ const Facility = () => {
             ></iframe>
           </div>
         </div>
-        <div className="displayInlineBlock width40Percentage iframeDiv">
+        <div className="facDisplayInlineBlock width40Percentage iframeDiv">
           <iframe
             title="Work Orders Trends"
             className="iframeBigKPI iframeCss"
@@ -38,7 +38,7 @@ const Facility = () => {
             
           ></iframe>
         </div>
-        <div className="displayInlineBlock width30Percentage iframeDiv">
+        <div className="facDisplayInlineBlock width30Percentage iframeDiv">
           <iframe
               title="Work Orders by Region"
               className="iframeBigKPI iframeCss"
@@ -48,7 +48,7 @@ const Facility = () => {
         </div>
       </div>
       <div className="width100Percentage">
-        <div className="displayInlineBlock width34Percentage iframeDiv">
+        <div className="facDisplayInlineBlock width34Percentage iframeDiv">
           <iframe
               title="Satisfaction Rating by Provider Type"
               className="iframeBigKPI iframeCss"
@@ -56,7 +56,7 @@ const Facility = () => {
               
           ></iframe>
         </div>
-        <div className="displayInlineBlock width32Percentage iframeDiv">
+        <div className="facDisplayInlineBlock width32Percentage iframeDiv">
           <iframe
             title="Top 10 Workorders by Specality"
             className="iframeBigKPI iframeCss"
@@ -64,7 +64,7 @@ const Facility = () => {
             
           ></iframe>
         </div>
-        <div className="displayInlineBlock width34Percentage iframeDiv">
+        <div className="facDisplayInlineBlock width34Percentage iframeDiv">
           <iframe
               title="Workorder volume by type"
               className="iframeBigKPI iframeCss"

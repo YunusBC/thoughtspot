@@ -1,7 +1,7 @@
 div.bgColor {
     background-color: #0771C1;   
     height: 100%;
-    min-height: 550px;
+    min-height: 450px;
 }
 
 .bgColor > div {
@@ -16,9 +16,10 @@ div.bgColor {
 
 div.topLeftDiv {
     background-color: #EFEDED;
-    padding: 30px;
     cursor: pointer;
-    height: 100px;
+    display:table-cell; 
+    vertical-align:middle; 
+    text-align:center
 }
 
 div.topLeftDivCollapsed {
@@ -31,8 +32,9 @@ div.topLeftDivCollapsed {
 }
 
 div.topLeftDiv > img {
-    max-width:100%;
-    max-height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
 }
 
 div.topLeftDivCollapsed > img {

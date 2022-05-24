@@ -8,7 +8,7 @@ import "./menu.css";
   const VerticalMenu = () => {
 
     const navigate = useNavigate ();
-    const [activeItem, setActiveItem] = useState('facility');
+    const [activeItem, setActiveItem] = useState('');
     const handleItemClick = (name) => {
       setActiveItem(name);
       navigate(`/${name}`);
@@ -20,7 +20,7 @@ import "./menu.css";
       (
         !context.settings.isMenuCollapsed === true ?
         <>
-        <div className='topLeftDiv' onClick={() => handleItemClick('')}>
+        <div className='topLeftDiv bannerHeight' onClick={() => handleItemClick('')}>
             <img src={topLeftFullLogo} alt="blue cloud"></img>
         </div>
         <div className="bgColor row">   

@@ -11,7 +11,7 @@ function TopMenuWithoutNav(props) {
   return (
     <SettingsContext.Consumer>
       {(context) => (
-        <div>
+        <div className="bannerHeight">
           <Grid padded stackable verticalAlign="bottom">
             <Grid.Row>
               <Grid.Column>
