@@ -35,9 +35,12 @@ class Property extends React.Component {
 
   render() {
     return (
-      <div className="margin20px">
-        <div id="embed" className="embedSearch"></div>
+      <>
+      <div className="row titleCss">Search Data</div>
+      <div className="row">
+        <div id="embed" className="iframeCss"></div>
       </div>
+    </>
     );
   }
 }
