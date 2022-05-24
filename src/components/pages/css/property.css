@@ -11,9 +11,14 @@ body {
     padding:30px;
 }
 
+.padding20px {
+    padding:20px;
+}
+
 .iframeCss {
     border-radius: 10px;
     overflow: hidden;
     padding: 0p;
     border: 0px;
+    height: 600px;
 }
