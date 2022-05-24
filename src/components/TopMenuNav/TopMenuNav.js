@@ -8,14 +8,6 @@ import SearchPng from "../../assets/img/search.png";
 import { Icon, Grid } from "semantic-ui-react";
 
 function TopMenuWithoutNav(props) {
-  const handleClick = (context) => {
-    console.log(
-      "🚀 ~ file: TopMenuNav.js ~ line 13 ~ handleClick ~ context.settings.isMenuCollapsed ",
-      context.settings.isMenuCollapsed
-    );
-    context.settings.isMenuCollapsed = !context.settings.isMenuCollapsed;
-  };
-
   return (
     <SettingsContext.Consumer>
       {(context) => (
@@ -42,7 +34,9 @@ function TopMenuWithoutNav(props) {
                 <h2 className="breadCrumbHeader">{props.title}</h2>
               </Grid.Column>
               <Grid.Column width={4}>
-                <img src={SearchPng} alt="Search" className="search-png" />
+                {context.settings.title !== "Property Management" ? (
+                  <img src={SearchPng} alt="Search" className="search-png" />
+                ) : null}
               </Grid.Column>
             </Grid.Row>
           </Grid>
