@@ -4,6 +4,7 @@ import SettingsContext from "../stateManagement/SettingsContext"
 const Property = () => {
   const context = useContext(SettingsContext);
   useEffect(() => {
+    context.selectMenu('property');
     context.setTitle('Property');
     context.setIsLandingPage(false);
   }, []);
