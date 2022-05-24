@@ -8,7 +8,7 @@
 
 .sub-menu {
   /* outline: 2px dashed red; */
-  min-height: 300px;
+  min-height: 150px;
   background-image: url("../../assets/img/banner.png");
   width: 100%;
 }
