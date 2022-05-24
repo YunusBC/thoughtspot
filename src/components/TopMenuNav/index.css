@@ -116,3 +116,27 @@ div.bgColor {
   color: white;
   position: relative;
 }
+
+.simple-menu {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(0 115 189);
+  color: white;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.simple-menu a {
+  text-decoration: none;
+  font-size: 12pt;
+  color: white;
+  margin-left: 50px;
+  align-self: center;
+  padding: 18px;
+}
+.simple-menu a:hover {
+  background-color: rgb(0 83 136);
+  color: white;
+}

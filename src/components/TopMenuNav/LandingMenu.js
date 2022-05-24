@@ -6,19 +6,14 @@ import SettingsContext from "../stateManagement/SettingsContext";
 const LandingMenuLinks = () => {
   return (
     <div className="alignCenter">
-      <div className="ui blue ten item stackable inverted large menu no-padding-and-margin compact">
-        <Link className="item hover" to="/facility">
-          Facility Management
-        </Link>
-        <Link className="item hover" to="/lease">
-          Lease Management
-        </Link>
-        <Link className="item hover" to="/property">
-          Property Management
-        </Link>
-        <Link className="item hover" to="/liveboards">
-          Personal Liveboards
-        </Link>
+      <div className="simple-menu">
+        <Link to="/facility">Facility Management</Link>
+
+        <Link to="/lease">Lease Management</Link>
+
+        <Link to="/property">Property Management</Link>
+
+        <Link to="/liveboards">Personal Liveboards</Link>
       </div>
     </div>
   );
