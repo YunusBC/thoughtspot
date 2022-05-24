@@ -6,7 +6,7 @@ body {
 .mainDiv {
     display: block;
     width: 100%;
-    min-height: 450px;
+    min-height: 550px;
 }
 
 div.textBlock p {
