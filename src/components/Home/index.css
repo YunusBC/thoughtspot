@@ -1,48 +1,65 @@
 body {
-    font-family: 'flaticon';
-    background-color: #E7F3FC !important;
-}
-
-.mainDiv {
-    display: block;
-    width: 100%;
-    min-height: 550px;
+  font-family: "flaticon";
+  background-color: #e7f3fc !important;
 }
 
 div.textBlock p {
-    color: black;
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-weight: 400;
+  color: black;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 .blueColor {
- color:#0771C1 !important;   
+  color: #0771c1 !important;
 }
 
 .textBlock {
-    display: inline-block;
-    width: 30%;
-    padding-left: 80px;
-    text-align: left;
-    padding-top: 60px;
-    vertical-align: top;
+  display: inline-block;
+  padding-left: 80px;
+  text-align: left;
+  padding-top: 60px;
+  vertical-align: top;
 }
 
-.Divblock {
-    display:inline-block;
-    width: 70%;
-    padding-top:20px;
-    padding-bottom:20px;
+.mainDiv {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 400px repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr) 10px;
+  height: 100%;
+  grid-gap: 20px;
+  grid-template-areas:
+    "textBlock topLeft topRight"
+    "textBlock bottomLeft bottomRight"
+    "textBlock .         .           ";
 }
 
-.displayBlock {
-    display: block;
+.topLeft {
+  grid-area: topLeft;
+  width: 100%;
+  height: 100%;
 }
-.displayInlineBlock {
-    display: inline-block;
-    width: 50%;
-    padding-top: 5px;
-    padding-bottom: 5px;
+
+.topRight {
+  grid-area: topRight;
+  width: 100%;
+  height: 100%;
+}
+
+.bottomLeft {
+  grid-area: bottomLeft;
+  width: 100%;
+  height: 100%;
+}
+
+.bottomRight {
+  grid-area: bottomRight;
+  width: 100%;
+  height: 100%;
+}
+
+.textBlock {
+  grid-area: textBlock;
 }
