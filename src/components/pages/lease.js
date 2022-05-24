@@ -4,6 +4,7 @@ import SettingsContext from "../stateManagement/SettingsContext"
 const Lease = () => {
   const context = useContext(SettingsContext);
   useEffect(() => {
+    context.selectMenu('lease');
     context.setTitle('Lease Management');
     context.setIsLandingPage(false);
   }, []);

@@ -6,7 +6,8 @@ class SettingsProvider extends Component {
     settings : {
       isLandingPage: true,
       isMenuCollapsed: false,
-      title: ''
+      title: '',
+      menuItem: ''
     }
   };
 
@@ -32,6 +33,13 @@ class SettingsProvider extends Component {
                 setTitle: title => {
                   const settings = this.state.settings;
                   settings.title = title;
+                  this.setState({
+                    settings
+                  });
+                },
+                selectMenu: title => {
+                  const settings = this.state.settings;
+                  settings.menuItem = title;
                   this.setState({
                     settings
                   });

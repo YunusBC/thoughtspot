@@ -5,6 +5,7 @@ import SettingsContext from "../stateManagement/SettingsContext"
 const Facility = () => {
   const context = useContext(SettingsContext);
   useEffect(() => {
+    context.selectMenu('facility');
     context.setTitle('Facility Management');
     context.setIsLandingPage(false);
   }, []);

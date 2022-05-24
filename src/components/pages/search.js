@@ -28,6 +28,7 @@ class Search extends React.Component {
   }
   componentDidMount() {
     let myContext = this.context;
+    myContext.selectMenu('');
     myContext.setTitle('Search Data');
     myContext.setIsLandingPage(false);
     makeSearch("0e3cfc50-e2cb-44cf-bde7-32e1c9023aa3");
