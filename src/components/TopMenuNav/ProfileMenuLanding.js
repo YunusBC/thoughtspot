@@ -7,7 +7,7 @@ const ProfileMenuLanding = () => {
     <div className="profile-menu-landing alignCenter">
       <Menu secondary stackable compact>
         <Menu.Item>
-          <Icon name="bell" size="big" inverted title="bell" />
+          <Icon name="bell" size="big" inverted title="Alerts" />
         </Menu.Item>
         <Menu.Item>
           <Icon name="setting" size="big" inverted title="Settings" />

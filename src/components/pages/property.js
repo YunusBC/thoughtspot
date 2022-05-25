@@ -5,7 +5,7 @@ const Property = () => {
   const context = useContext(SettingsContext);
   useEffect(() => {
     context.selectMenu('property');
-    context.setTitle('Property');
+    context.setTitle('Property Management');
     context.setIsLandingPage(false);
   }, []);
   return (

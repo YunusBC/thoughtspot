@@ -6,7 +6,7 @@ body {
 .mainDiv {
     display: block;
     width: 100%;
-    min-height: 550px;
+    min-height: 700px;
     position: relative;
 }
 
@@ -29,7 +29,7 @@ div.textBlock p {
     vertical-align: middle;
     left: 2%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
@@ -39,7 +39,7 @@ div.textBlock p {
     text-align: right;
     width: 70%;
     position: absolute;
-    top: 50%;
+    top: 45%;
     right: 2%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);

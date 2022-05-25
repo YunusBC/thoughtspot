@@ -7,7 +7,7 @@ const ProfileMenu = () => {
     <div className="profile-menu">
       <Menu secondary stackable compact>
         <Menu.Item>
-          <Icon name="bell" size="big" color="blue" title="bell" />
+          <Icon name="bell" size="big" color="blue" title="Alerts" />
         </Menu.Item>
         <Menu.Item>
           <Icon name="setting" size="big" color="blue" title="Settings" />
