@@ -27,7 +27,7 @@ div.textBlock p {
     width: 30%;
     text-align: left;
     vertical-align: middle;
-    left: 5%;
+    left: 2%;
     position: absolute;
     top: 50%;
     -ms-transform: translateY(-50%);
@@ -40,7 +40,7 @@ div.textBlock p {
     width: 70%;
     position: absolute;
     top: 50%;
-    right: 5%;
+    right: 2%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
