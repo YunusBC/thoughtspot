@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MasterPage from "./components/MasterPage/masterpage";
+import BlueCloudHomePage from "./components/BlueCloudHome/BlueCloudHomePage";
 import VerticalMenu from "./components/LeftMenu/menu";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/footer";
@@ -36,7 +37,8 @@ const Content = () => {
                   : "width80Percentage"
               } `}
             >
-              <MasterPage />
+              <BlueCloudHomePage />
+              {/* <MasterPage /> */}
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/facility" element={<Facility />} />
@@ -51,7 +53,8 @@ const Content = () => {
         {context.settings.isLandingPage && (
           <React.Fragment>
             <div className="sixteen wide column">
-              <MasterPage />
+              <BlueCloudHomePage />
+              {/* <MasterPage /> */}
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/facility" element={<Facility />} />
