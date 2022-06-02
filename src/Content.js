@@ -18,6 +18,9 @@ const Content = () => {
   const context = useContext(SettingsContext);
   return (
     <BrowserRouter>
+      <Routes>
+        <Route path="/bchome" element={<BlueCloudHomePage />} />
+      </Routes>
       <div className="ui grid">
         {!context.settings.isLandingPage && (
           <React.Fragment>
@@ -37,10 +40,11 @@ const Content = () => {
                   : "width80Percentage"
               } `}
             >
-              <BlueCloudHomePage />
-              {/* <MasterPage /> */}
+              <MasterPage />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/home2" element={<Home />} />
+                <Route path="/bchome2" element={<BlueCloudHomePage />} />
                 <Route path="/facility" element={<Facility />} />
                 <Route path="/lease" element={<Lease />} />
                 <Route path="/property" element={<Property />} />
@@ -53,8 +57,7 @@ const Content = () => {
         {context.settings.isLandingPage && (
           <React.Fragment>
             <div className="sixteen wide column">
-              <BlueCloudHomePage />
-              {/* <MasterPage /> */}
+              <MasterPage />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/facility" element={<Facility />} />

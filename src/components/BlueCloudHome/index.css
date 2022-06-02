@@ -1,0 +1,58 @@
+.parent {
+  display: grid;
+  grid-template-columns: auto auto 250px;
+  grid-template-rows: 90px 850px 200px 50px auto;
+  min-height: 5000px;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    ". features ."
+    "footer footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+  background-image: url("../../assets/img/9-mini.jpeg");
+}
+
+.sidebar {
+  grid-area: sidebar;
+  display: none;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.features {
+  grid-area: features;
+}
+
+.parent {
+  height: 90vh;
+  /* border: 5px solid #333; */
+}
+
+.grid-area {
+  background-color: #faf9f5;
+  /* border-radius: 10px;
+  font: 25px Georgia;
+  border: 5px solid #949494; */
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .parent {
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto 50px;
+    grid-template-areas:
+      "header"
+      "sidebar"
+      "main"
+      "footer";
+  }
+}
