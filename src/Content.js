@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MasterPage from "./components/MasterPage/masterpage";
+import BlueCloudHomePage from "./components/BlueCloudHome/BlueCloudHomePage";
 import VerticalMenu from "./components/LeftMenu/menu";
 import Home from "./components/Home/Home";
 import Footer from "./components/Footer/footer";
@@ -17,6 +18,9 @@ const Content = () => {
   const context = useContext(SettingsContext);
   return (
     <BrowserRouter>
+      <Routes>
+        <Route path="/bchome" element={<BlueCloudHomePage />} />
+      </Routes>
       <div className="ui grid">
         {!context.settings.isLandingPage && (
           <React.Fragment>
@@ -39,6 +43,8 @@ const Content = () => {
               <MasterPage />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/home2" element={<Home />} />
+                <Route path="/bchome2" element={<BlueCloudHomePage />} />
                 <Route path="/facility" element={<Facility />} />
                 <Route path="/lease" element={<Lease />} />
                 <Route path="/property" element={<Property />} />
