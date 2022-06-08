@@ -52,11 +52,13 @@ div.menu {
 
 div.collapsedMenu {
     margin-left: 5%;
+    height: 40px;
 }
 
 .menuIconDiv {
     display:inline-block;
     margin-right: 15px;
+    height: 40px;
 }
 
 .centerCss {
@@ -67,7 +69,7 @@ div.collapsedMenu {
     font-size: 18px;
     margin: initial !important;
     line-height: initial !important;
-    transform: scaleY(1.4);
+    /* transform: scaleY(1.4); */
     letter-spacing: 0.5px;
  }
 
@@ -76,49 +78,60 @@ div.collapsedMenu {
  }
 
  div.itemContainer {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding-block: 5px;
     width: 85%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-block-end: 0.5em;
  }
 
  .itemContainerCollapsed {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    padding-block: 5px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-block-end: 0.5em;
  }
 
  div.hover:hover {
     background-color: #06528B;
     cursor: pointer;
+    border-radius: 10px;
  }
 
  div.active {
     background-color: #06528B;
     cursor: pointer;
+    border-radius: 10px;
  }
  
  div.activeCollapsed {
     background-color: #06528B;
     cursor: pointer;
+    border-radius: 10px;
  }
 
  div.hoverCollapsed:hover {
     background-color: #06528B;
     cursor: pointer;
+    border-radius: 10px;
  }
 
  div.menuText {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
     position: absolute;
-    margin-top: 7px;
+    /* margin-top: 7px; */
+    height: 100%;
  }
 
  div.menuText p {
-     margin-top:initial !important;
-     margin-bottom:initial !important;
+     /* margin-top:initial !important;
+     margin-bottom:initial !important; */
+     width: 100%;
  }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
