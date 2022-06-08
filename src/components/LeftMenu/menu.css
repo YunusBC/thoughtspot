@@ -69,7 +69,6 @@ div.collapsedMenu {
     font-size: 18px;
     margin: initial !important;
     line-height: initial !important;
-    /* transform: scaleY(1.4); */
     letter-spacing: 0.5px;
  }
 
@@ -78,8 +77,6 @@ div.collapsedMenu {
  }
 
  div.itemContainer {
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
     padding-block: 5px;
     width: 85%;
     margin-left: 5%;
@@ -88,8 +85,6 @@ div.collapsedMenu {
  }
 
  .itemContainerCollapsed {
-    /* padding-top: 20px;
-    padding-bottom: 20px; */
     padding-block: 5px;
     margin-left: 10px;
     margin-right: 10px;
@@ -124,13 +119,10 @@ div.collapsedMenu {
     display: inline-flex;
     align-items: center;
     position: absolute;
-    /* margin-top: 7px; */
     height: 100%;
  }
 
  div.menuText p {
-     /* margin-top:initial !important;
-     margin-bottom:initial !important; */
      width: 100%;
  }
 
