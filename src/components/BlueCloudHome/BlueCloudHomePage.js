@@ -12,14 +12,14 @@ const BlueCloudHomePage = () => {
   }, []);
   return (
     <div className="parent">
-      <div className="header grid-area">
+      <div className="header ">
         <BcHeader />
       </div>
-      <div className="main grid-area"> </div>
-      <div className="features grid-area">
+      <div className="main "> </div>
+      <div className="features ">
         <BcFeatures />
       </div>
-      <div className="bcfooter grid-area">
+      <div className="bcfooter ">
         © Copyright 2022 Blue.cloud Inc | All Rights Reserved
       </div>
     </div>

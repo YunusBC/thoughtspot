@@ -33,14 +33,7 @@
   grid-area: features;
   width: 100vw;
   min-height: 200px;
-}
-
-.grid-area {
-  /* background-color: #faf9f5; */
-  /* border-radius: 10px;
-  font: 25px Georgia;
-  border: 5px solid #949494; */
-  /* text-align: center; */
+  background-color: transparent;
 }
 
 @media (max-width: 600px) {
