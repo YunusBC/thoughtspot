@@ -1,14 +1,15 @@
 .parent {
   display: grid;
   grid-template-columns: auto auto 250px;
-  grid-template-rows: 90px 850px 200px 50px;
+  grid-template-rows: 90px 850px auto 50px;
   grid-template-areas:
     "header header header"
     "main main main"
     "features features features"
-    ". . ."
     "bcfooter bcfooter bcfooter";
   height: 100vh;
+  grid-auto-flow: row;
+  overflow: auto;
 }
 
 .header {
@@ -30,6 +31,7 @@
   align-items: center;
   justify-items: center;
   background-color: white;
+  width: 100vw;
 }
 
 .features {
@@ -41,13 +43,14 @@
 
 @media (max-width: 600px) {
   .parent {
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: 90px auto auto 50px;
+    grid-template-columns: minmax(1fr, 600px);
+    grid-auto-rows: auto;
+    grid-template-rows: 90px auto auto minmax(500px, 1fr) 50px;
     grid-template-areas:
       "header"
       "main"
       "features"
+      "."
       "bcfooter";
-    height: 100vh;
   }
 }
