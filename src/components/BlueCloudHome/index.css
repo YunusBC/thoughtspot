@@ -18,6 +18,8 @@
 .main {
   grid-area: main;
   background-image: url("../../assets/img/9-mini.jpeg");
+  background-size: cover;
+  background-position: center center;
   min-height: 250px;
 }
 
