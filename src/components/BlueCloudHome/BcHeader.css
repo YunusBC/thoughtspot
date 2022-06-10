@@ -73,3 +73,11 @@
 .last-menu-item a {
   color: white;
 }
+@media screen and (max-width: 1024px) {
+  .right-menu-item {
+    display: none !important;
+  }
+  .right-menu-item:last-child {
+    display: block !important;
+  }
+}
