@@ -17,7 +17,7 @@ import "./menu.css";
       (
         !context.settings.isMenuCollapsed === true ?
         <>
-        <div className='topLeftDiv bannerHeight' onClick={() => handleItemClick('')}>
+        <div className='topLeftDiv bannerHeight' onClick={() => handleItemClick('home')}>
             <img src={topLeftFullLogo} alt="blue cloud"></img>
         </div>
         <div className="bgColor row">
@@ -66,7 +66,7 @@ import "./menu.css";
         </>
       :
       <>
-        <div className='topLeftDivCollapsed' onClick={() => handleItemClick('')}>
+        <div className='topLeftDivCollapsed' onClick={() => handleItemClick('home')}>
             <img src={topLeftPartialLogo} alt="blue cloud"></img>
         </div>
         <div className="bgColorCollapsed row">

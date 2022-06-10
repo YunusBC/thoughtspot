@@ -52,6 +52,12 @@
   height: 42px;
 }
 
+.bcFullWidth {
+  width: 100%;
+  margin: 0;
+  text-align: center;
+}
+
 .ui.grid {
   margin : initial !important;
 }

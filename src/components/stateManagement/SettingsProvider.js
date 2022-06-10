@@ -4,7 +4,8 @@ import SettingsContext from './SettingsContext';
 class SettingsProvider extends Component {
   state = {
     settings : {
-      isLandingPage: true,
+      isBcHome: true,
+      isLandingPage: false,
       isMenuCollapsed: false,
       title: '',
       menuItem: ''
@@ -16,6 +17,13 @@ class SettingsProvider extends Component {
         <SettingsContext.Provider
             value={{
                 settings: this.state.settings,
+                setIsBcHome: bool => {
+                  const settings = this.state.settings;
+                  settings.isBcHome = bool;
+                  this.setState({
+                    settings
+                  });
+                },
                 setIsLandingPage: bool => {
                     const settings = this.state.settings;
                     settings.isLandingPage = bool;

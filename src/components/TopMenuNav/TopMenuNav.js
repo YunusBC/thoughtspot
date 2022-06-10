@@ -1,12 +1,13 @@
-import "./index.css";
+import React from "react";
 import SettingsContext from "../stateManagement/SettingsContext";
 import ProfileMenu from "./ProfileMenu";
 import ProfileMenuLanding from "./ProfileMenuLanding";
+import { useNavigate } from "react-router-dom";
 import { ReactComponent as LogoDark } from "../../assets/img/logo-dark.svg";
 import SearchPng from "../../assets/img/search.png";
 import { Link } from "react-router-dom";
-
 import { Icon, Grid } from "semantic-ui-react";
+import "./index.css";
 
 function TopMenuWithoutNav(props) {
   return (
@@ -68,10 +69,15 @@ function TopMenuWithoutNav(props) {
 }
 
 const LandingMenu = () => {
+  const navigate = useNavigate ();
+  const handleItemClick = (e) => {
+    e.preventDefault();
+    navigate('/home');
+  }
   return (
     <div className="sub-menu">
       <div className="page-logo-landing">
-        <a href="/">
+        <a href="#" onClick={(e) => handleItemClick(e)}>
           <span className="logo-default-landing">
             <LogoDark></LogoDark>
           </span>

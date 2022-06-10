@@ -18,11 +18,15 @@ const Content = () => {
   const context = useContext(SettingsContext);
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/bchome" element={<BlueCloudHomePage />} />
-      </Routes>
-      <div className="ui grid">
-        {!context.settings.isLandingPage && (
+      <div className={`${
+                context.settings.isBcHome
+                  ? "bcFullWidth"
+                  : "ui grid"
+              }`}>
+        {context.settings.isBcHome && (
+          <BlueCloudHomePage/>
+        )}
+        {!context.settings.isBcHome && !context.settings.isLandingPage && (
           <React.Fragment>
             <div
               className={`${
@@ -31,7 +35,7 @@ const Content = () => {
                   : "width20Percentage"
               } `}
             >
-              <VerticalMenu />
+            <VerticalMenu />
             </div>
             <div
               className={`${
@@ -40,26 +44,24 @@ const Content = () => {
                   : "width80Percentage"
               } `}
             >
-              <MasterPage />
-              <Routes>
-                <Route path="/" element={<Home />} />
-                <Route path="/home2" element={<Home />} />
-                <Route path="/bchome2" element={<BlueCloudHomePage />} />
-                <Route path="/facility" element={<Facility />} />
-                <Route path="/lease" element={<Lease />} />
-                <Route path="/property" element={<Property />} />
-                <Route path="/liveboards" element={<Liveboards />} />
-                <Route path="/search" element={<Search />} />
-              </Routes>
+            <MasterPage />
+            <Routes>
+              <Route path="/home" element={<Home />} />
+              <Route path="/facility" element={<Facility />} />
+              <Route path="/lease" element={<Lease />} />
+              <Route path="/property" element={<Property />} />
+              <Route path="/liveboards" element={<Liveboards />} />
+              <Route path="/search" element={<Search />} />
+            </Routes>
             </div>
           </React.Fragment>
         )}
-        {context.settings.isLandingPage && (
+        {!context.settings.isBcHome && context.settings.isLandingPage && (
           <React.Fragment>
             <div className="sixteen wide column">
               <MasterPage />
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
                 <Route path="/facility" element={<Facility />} />
                 <Route path="/lease" element={<Lease />} />
                 <Route path="/property" element={<Property />} />
@@ -69,10 +71,12 @@ const Content = () => {
             </div>
           </React.Fragment>
         )}
-        <div className="fullWidth">
-          <Footer />
+        {!context.settings.isBcHome && (
+          <div className="fullWidth">
+            <Footer />
+          </div>
+        )}
         </div>
-      </div>
     </BrowserRouter>
   );
 };
